@@ -514,17 +514,29 @@
       if (action === "share") {
         if (window.LBExport && typeof window.LBExport.share === "function") {
           var res = await window.LBExport.share(exportPayload);
-          if (res && res.ok) {
-            showPill("Shared successfully! ♡", { type: "success" });
+          if (res && res.ok && !res.aborted) {
+            if (res.method === "clipboard") {
+              showPill("Copied to clipboard! ♡", { type: "success" });
+            } else if (res.method === "download") {
+              showPill("Photo saved to downloads! ♡", { type: "success" });
+            } else {
+              showPill("Shared successfully! ♡", { type: "success" });
+            }
           }
         } else if (navigator.share) {
           var file = new File([item.blob], filename, { type: "image/png" });
-          if (navigator.canShare && navigator.canShare({ files: [file] })) {
-            await navigator.share({ files: [file], title: exportPayload.title, text: exportPayload.text });
-            showPill("Shared successfully! ♡", { type: "success" });
-          } else {
-            await navigator.share({ title: exportPayload.title, text: exportPayload.text, url: window.location.href });
-            showPill("Shared successfully! ♡", { type: "success" });
+          try {
+            if (navigator.canShare && navigator.canShare({ files: [file] })) {
+              await navigator.share({ files: [file], title: exportPayload.title, text: exportPayload.text });
+              showPill("Shared successfully! ♡", { type: "success" });
+            } else {
+              await navigator.share({ title: exportPayload.title, text: exportPayload.text, url: window.location.href });
+              showPill("Shared successfully! ♡", { type: "success" });
+            }
+          } catch (shareErr) {
+            if (shareErr && shareErr.name !== "AbortError") {
+              throw shareErr;
+            }
           }
         } else {
           showPill("Preparing your photo...", { type: "info" });

@@ -372,7 +372,7 @@
       }
       
       
-      if (!can && env.isIOS) {
+      if (!can) {
         return Promise.resolve({
           ok: false,
           method: "share",
