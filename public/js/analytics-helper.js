@@ -1,0 +1,1 @@
+window.trackGA4Event=function(a,n={}){window.dataLayer=window.dataLayer||[],window.gtag=window.gtag||function(){window.dataLayer.push(arguments)},window.gtag("event",a,n)};

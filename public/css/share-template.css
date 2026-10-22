@@ -1,0 +1,29 @@
+/* Share-template sheet (public/js/share-template.js) for pages that don't load camera.css. */
+.lb-share-template-overlay{position:fixed;inset:0;background:#0006;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:20050;display:flex;align-items:flex-end;justify-content:center;opacity:0;pointer-events:none;transition:opacity .2s ease}
+.lb-share-template-overlay.visible{opacity:1;pointer-events:auto}
+.lb-share-template-card{position:relative;background:#fff;border-radius:24px 24px 0 0;padding:24px 20px max(env(safe-area-inset-bottom,20px),20px);width:100%;max-width:460px;transform:translateY(100%);transition:transform .3s cubic-bezier(.16,1,.3,1),opacity .3s ease;text-align:center;box-sizing:border-box;font-family:var(--font-main,"Satoshi",sans-serif);color:#000}
+.lb-share-template-overlay.visible .lb-share-template-card{transform:translateY(0)}
+.lb-share-template-card .share-modal-handle{width:40px;height:4px;background:#eee;border-radius:2px;margin:0 auto 20px}
+.lb-share-template-card .share-modal-close{position:absolute;top:20px;right:20px;background:none;border:none;cursor:pointer;color:#999;padding:4px;display:flex;align-items:center;justify-content:center;transition:color .2s ease,transform .2s ease}
+.lb-share-template-card .share-modal-close:hover{color:#000;transform:scale(1.1)}
+.lb-share-template-card .share-modal-title{font-family:var(--font-main,"Satoshi",sans-serif);font-size:clamp(20px,2.2vw,24px);font-weight:700;line-height:1.25;letter-spacing:-.02em;margin:0 0 8px;text-align:center}
+.lb-share-template-card .share-modal-desc{font-size:15px;font-weight:500;line-height:1.55;margin:0 0 20px;text-align:center}
+.lb-share-ratio-tabs{display:flex;justify-content:center;gap:8px;margin-bottom:14px}
+.lb-share-ratio-tab{border:1.5px solid #000;border-radius:999px;background:#fff;color:#000;font-family:var(--font-main,"Satoshi",sans-serif);font-size:13px;font-weight:600;padding:6px 14px;cursor:pointer;white-space:nowrap;transition:transform .15s ease,box-shadow .15s ease}
+.lb-share-ratio-tab:not(.active):hover{transform:translateY(-2px);box-shadow:2px 2px #000}
+.lb-share-ratio-tab.active{background:#000;color:#fff;cursor:default}
+.lb-share-preview-box{position:relative;width:100%;height:310px;max-height:42vh;background:#f4f4f0;border:1px solid #000;border-radius:14px;margin-bottom:18px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.lb-share-preview-img{max-width:90%;max-height:90%;object-fit:contain;border-radius:6px;transition:opacity .2s ease}
+.lb-share-preview-box.loading .lb-share-preview-img{opacity:.3}
+.lb-share-preview-spinner{position:absolute;display:none;width:32px;height:32px;border:3px solid rgba(0,0,0,.15);border-top-color:#000;border-radius:50%;animation:lbShareSpin .75s infinite linear}
+.lb-share-preview-box.loading .lb-share-preview-spinner{display:block}
+@keyframes lbShareSpin{to{transform:rotate(360deg)}}
+.lb-share-actions-row{display:flex;gap:12px;justify-content:center;width:100%;margin-top:6px}
+.lb-share-btn{flex:1;height:48px;border-radius:12px;border:1.5px solid #000;font-family:var(--font-main,"Satoshi",sans-serif);font-size:15px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:transform .15s ease,background-color .15s ease}
+.lb-share-btn-share{background:var(--primary,#f12850);color:#fff}
+.lb-share-btn-share:hover{background:#000;transform:translateY(-1px)}
+.lb-share-btn-save{background:#fff;color:#000}
+.lb-share-btn-save:hover{background:#f0f0f0;transform:translateY(-1px)}
+@media(min-width:481px){.lb-share-template-overlay{align-items:center;padding:20px}.lb-share-template-card{border-radius:24px;border:1px solid #000;padding:28px 24px;transform:scale(.96);opacity:0;max-height:calc(100dvh - 32px);overflow-y:auto;overscroll-behavior:contain}.lb-share-template-overlay.visible .lb-share-template-card{transform:scale(1);opacity:1}.lb-share-template-card .share-modal-handle{display:none}}
+@media(prefers-reduced-motion:reduce){.lb-share-template-overlay,.lb-share-template-card{transition:none}}
+.lb-share-template-card:focus{outline:none}

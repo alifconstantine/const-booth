@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <path d="M64 70 L64 116" stroke="#5ea34c" stroke-width="5" stroke-linecap="round"/>
+  <path d="M64 92 q-16 -6 -22 4 q14 8 22 -4 z" fill="#7dbf6b"/>
+  <g fill="#ffcf3d">
+    <g id="p"><ellipse cx="64" cy="26" rx="8" ry="16"/></g>
+    <use href="#p" transform="rotate(45 64 58)"/>
+    <use href="#p" transform="rotate(90 64 58)"/>
+    <use href="#p" transform="rotate(135 64 58)"/>
+    <use href="#p" transform="rotate(180 64 58)"/>
+    <use href="#p" transform="rotate(225 64 58)"/>
+    <use href="#p" transform="rotate(270 64 58)"/>
+    <use href="#p" transform="rotate(315 64 58)"/>
+  </g>
+  <circle cx="64" cy="58" r="22" fill="#8a5a30"/>
+  <circle cx="56" cy="56" r="4.5" fill="#fff"/>
+  <circle cx="72" cy="56" r="4.5" fill="#fff"/>
+  <circle cx="56" cy="56" r="2.2" fill="#3a2e2e"/>
+  <circle cx="72" cy="56" r="2.2" fill="#3a2e2e"/>
+  <circle cx="49" cy="64" r="4" fill="#ff9db0" opacity="0.5"/>
+  <circle cx="79" cy="64" r="4" fill="#ff9db0" opacity="0.5"/>
+  <path d="M58 64 q6 5 12 0" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+</svg>

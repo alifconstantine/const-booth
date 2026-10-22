@@ -1,0 +1,75 @@
+{
+  "name": "ConstBooth",
+  "short_name": "ConstBooth",
+  "lang": "en",
+  "description": "Premium Shared Photo Booth Experience",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F4F0",
+  "theme_color": "#F4F4F0",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg?v=1cc90a35",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon-192.png?v=365ea236",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon-180.png?v=3666cd26",
+      "type": "image/png",
+      "sizes": "180x180",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon-512.png?v=7bd1cc2e",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon-192.avif?v=8417c724",
+      "type": "image/avif",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon-512.avif?v=3465dccb",
+      "type": "image/avif",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "orientation": "any",
+  "categories": ["entertainment", "photo", "social"],
+  "screenshots": [
+    {
+      "src": "/assets/lensbooth-preview.jpg?v=038c858a",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "ConstBooth Desktop Experience"
+    },
+    {
+      "src": "/assets/solocardpreviewmobile.webp?v=2cf9bf84",
+      "sizes": "390x844",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "ConstBooth Mobile Camera"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Enter Booth",
+      "short_name": "Booth",
+      "description": "Jump straight into the photobooth",
+      "url": "/booth",
+      "icons": [{ "src": "/assets/icon-192.png?v=365ea236", "sizes": "192x192" }]
+    }
+  ]
+}

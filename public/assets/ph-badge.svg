@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="54" viewBox="0 0 250 54"><g fill="none" fill-rule="evenodd"><rect width="249" height="53" x=".5" y=".5" fill="#221d21" stroke="#221d21" rx="10"/><text fill="#eef2ff" font-family="Helvetica-Bold, Helvetica" font-size="9" font-weight="bold">
+          <tspan x="53" y="20">FIND US ON</tspan>
+        </text><text fill="#eef2ff" font-family="Helvetica-Bold, Helvetica" font-size="21" font-weight="bold">
+          <tspan x="52" y="40">Product Hunt</tspan>
+        </text><g fill="#eef2ff"><path d="M227.002 23H216l5.501-10z"/><text font-family="Helvetica-Bold, Helvetica" font-size="13" font-weight="bold" transform="translate(201 13)">
+          <tspan x="15.7" y="27">3</tspan>
+        </text></g><path fill="#fff" d="M42 27.5C42 36.06 35.06 43 26.5 43S11 36.06 11 27.5 17.94 12 26.5 12 42 18.94 42 27.5"/><path fill="#221d21" d="M28.433 27.956h-4.34v-4.65h4.34c1.269 0 2.298 1.04 2.298 2.325 0 1.284-1.03 2.325-2.298 2.325m0-7.75h-7.404v15.5h3.064v-4.65h4.34c2.96 0 5.361-2.429 5.361-5.425s-2.4-5.425-5.361-5.425"/></g></svg>

@@ -1,0 +1,35 @@
+/* LensBooth Global Overrides & Ad-free Reset */
+:root {
+  --lb-ad-height: 0px;
+}
+
+/* Remove any remaining ad spacing */
+.lb-inline-ad,
+.lb-strip-ad,
+.lb-ad-container,
+[data-ad] {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Remove top announcement bar */
+.announcement-bar,
+.announcement-slider,
+.announcement-slide {
+  display: none !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+html body.has-announcement,
+body.has-announcement {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
