@@ -1,0 +1,5193 @@
+[
+  {
+    "id": "63d75807-c7e7-4bdc-a18f-bc610b32a820",
+    "shortId": "63d758",
+    "name": "1975 - About you (4)",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 119018,
+    "frameFile": "1975-about-you-4_1x3_3slots_63d758.png",
+    "frameUrl": "/assets/jepreto-frames/strips/1975-about-you-4_1x3_3slots_63d758.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/1975-about-you-4_1x3_3slots_63d758.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751913671797-1975_-_About_you_1x3_final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 6,
+        "left": 2,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 32,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 59,
+        "left": 3,
+        "width": 95,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "372b0e80-e7e2-11f0-b0e8-62a09b96abf0",
+    "shortId": "372b0e",
+    "name": "Newspaper About You",
+    "creator": "Gaya Potret Padang",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 2,
+    "usedTimes": 89986,
+    "frameFile": "newspaper-about-you_2x3_2slots_372b0e.png",
+    "frameUrl": "/assets/jepreto-frames/cards/newspaper-about-you_2x3_2slots_372b0e.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/newspaper-about-you_2x3_2slots_372b0e.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1767361920398-Desain_OK__1___1_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 34,
+        "left": 1,
+        "width": 98,
+        "height": 27,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 68,
+        "left": 67,
+        "width": 32,
+        "height": 14,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "89b58e93-5c06-11f0-8c06-82f9d1e92f26",
+    "shortId": "89b58e",
+    "name": "1975 - About you 3x4",
+    "creator": "Jepreto",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 67822,
+    "frameFile": "1975-about-you-3x4_2x3_6slots_89b58e.png",
+    "frameUrl": "/assets/jepreto-frames/cards/1975-about-you-3x4_2x3_6slots_89b58e.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/1975-about-you-3x4_2x3_6slots_89b58e.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751984358420-1975_FINAL.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 59.8,
+        "left": 1.6,
+        "width": 46.1,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 6.3,
+        "left": 2.2,
+        "width": 45.5,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 33.3,
+        "left": 2.2,
+        "width": 45.5,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 59.8,
+        "left": 51.7,
+        "width": 45.8,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 6.3,
+        "left": 52,
+        "width": 45.8,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 33.3,
+        "left": 52,
+        "width": 45.8,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "e1515bcc-013d-4f62-804e-eca52ae355a8",
+    "shortId": "e1515b",
+    "name": "Everything U Are",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 66850,
+    "frameFile": "everything-u-are_1x3_3slots_e1515b.png",
+    "frameUrl": "/assets/jepreto-frames/strips/everything-u-are_1x3_3slots_e1515b.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/everything-u-are_1x3_3slots_e1515b.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751912676013-Everything_u_are_1x3_final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 6,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 35,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 64,
+        "left": 2,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "392d06be-aba2-4605-83a2-0a7b07470fa2",
+    "shortId": "392d06",
+    "name": "Lany - XXL (3)",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 39070,
+    "frameFile": "lany-xxl-3_1x3_3slots_392d06.png",
+    "frameUrl": "/assets/jepreto-frames/strips/lany-xxl-3_1x3_3slots_392d06.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/lany-xxl-3_1x3_3slots_392d06.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751913994059-Leny_-_xxl_1x3_final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 9,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 34,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 61,
+        "left": 2,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "1ec774eb-b237-11f0-85b3-82f9d1e92f26",
+    "shortId": "1ec774",
+    "name": "sekkkkkk",
+    "creator": "woiks bababa",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 31956,
+    "frameFile": "sekkkkkk_1x3_3slots_1ec774.png",
+    "frameUrl": "/assets/jepreto-frames/strips/sekkkkkk_1x3_3slots_1ec774.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/sekkkkkk_1x3_3slots_1ec774.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1761461024278-output-onlinepngtools_3_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 9,
+        "left": 0,
+        "width": 100,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 31,
+        "left": 0,
+        "width": 100,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 54,
+        "left": 0,
+        "width": 100,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "1ff7fc98-9340-4aea-b6d0-eb02d4699f89",
+    "shortId": "1ff7fc",
+    "name": "Arctic Monkey (4)",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 28659,
+    "frameFile": "arctic-monkey-4_1x3_3slots_1ff7fc.png",
+    "frameUrl": "/assets/jepreto-frames/strips/arctic-monkey-4_1x3_3slots_1ff7fc.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/arctic-monkey-4_1x3_3slots_1ff7fc.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751913739203-Artic_Monkey_1x3_final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 34,
+        "left": 2,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 61,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "dd2e0ec5-f26e-4306-ac5f-c0eac2d3b543",
+    "shortId": "dd2e0e",
+    "name": "NIKI - You'll Be in My Hearth (4)",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 28530,
+    "frameFile": "niki-youll-be-in-my-hearth-4_1x3_3slots_dd2e0e.png",
+    "frameUrl": "/assets/jepreto-frames/strips/niki-youll-be-in-my-hearth-4_1x3_3slots_dd2e0e.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/niki-youll-be-in-my-hearth-4_1x3_3slots_dd2e0e.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751913861104-NIKI_1x3__2__final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 8.1,
+        "left": 3.7,
+        "width": 91.4,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 34.6,
+        "left": 3.7,
+        "width": 91.4,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 61.4,
+        "left": 4.3,
+        "width": 91.4,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "635c497d-799d-11f0-bbca-82f9d1e92f26",
+    "shortId": "635c49",
+    "name": "Toy Story 2x3",
+    "creator": "Jepreto",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 27941,
+    "frameFile": "toy-story-2x3_2x3_6slots_635c49.png",
+    "frameUrl": "/assets/jepreto-frames/cards/toy-story-2x3_2x3_6slots_635c49.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/toy-story-2x3_2x3_6slots_635c49.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1755237731785-Toy_Story_2x3_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7.5,
+        "left": 2.2,
+        "width": 45.5,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 32.1,
+        "left": 2.2,
+        "width": 45.5,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 57.1,
+        "left": 2.2,
+        "width": 45.5,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 7.5,
+        "left": 51.4,
+        "width": 45.8,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 32.1,
+        "left": 51.7,
+        "width": 45.5,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 57.1,
+        "left": 51.7,
+        "width": 45.5,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "3eb2aa38-f6e3-11f0-b0e8-62a09b96abf0",
+    "shortId": "3eb2aa",
+    "name": "baddie",
+    "creator": "Nurul Salwa Humaira",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 23007,
+    "frameFile": "baddie_1x3_3slots_3eb2aa.png",
+    "frameUrl": "/assets/jepreto-frames/strips/baddie_1x3_3slots_3eb2aa.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/baddie_1x3_3slots_3eb2aa.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1769011630374-baddie_here__1_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 1,
+        "width": 95,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 33,
+        "left": 2,
+        "width": 95,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 59,
+        "left": 3,
+        "width": 95,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "8e698930-9e0b-11f0-85b3-82f9d1e92f26",
+    "shortId": "8e6989",
+    "name": "a sony angel",
+    "creator": "stella nadifa",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 22364,
+    "frameFile": "a-sony-angel_1x3_3slots_8e6989.png",
+    "frameUrl": "/assets/jepreto-frames/strips/a-sony-angel_1x3_3slots_8e6989.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/a-sony-angel_1x3_3slots_8e6989.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1759243290341-songel__2_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 10,
+        "left": 3,
+        "width": 94,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 32,
+        "left": 3,
+        "width": 94,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 55,
+        "left": 3,
+        "width": 94,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "93bbd82a-db5c-4539-b70e-448dbc82fe3e",
+    "shortId": "93bbd8",
+    "name": "Wave to Earth (4)",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 20366,
+    "frameFile": "wave-to-earth-4_1x3_3slots_93bbd8.png",
+    "frameUrl": "/assets/jepreto-frames/strips/wave-to-earth-4_1x3_3slots_93bbd8.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/wave-to-earth-4_1x3_3slots_93bbd8.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751913573692-W2E_1x3_final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 2,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 34,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 61,
+        "left": 2,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "1eb11603-5c02-11f0-8c06-82f9d1e92f26",
+    "shortId": "1eb116",
+    "name": "Lany - XXL 3 x 4",
+    "creator": "Jepreto",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 20095,
+    "frameFile": "lany-xxl-3-x-4_2x3_6slots_1eb116.png",
+    "frameUrl": "/assets/jepreto-frames/cards/lany-xxl-3-x-4_2x3_6slots_1eb116.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/lany-xxl-3-x-4_2x3_6slots_1eb116.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751982460931-Black_blue_FINAL.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 9.3,
+        "left": 1.9,
+        "width": 46.8,
+        "height": 19.9,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 35,
+        "left": 2.2,
+        "width": 45.8,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 61.8,
+        "left": 2.2,
+        "width": 45.8,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 9.4,
+        "left": 52,
+        "width": 45.8,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 35,
+        "left": 52,
+        "width": 45.8,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 61.8,
+        "left": 52,
+        "width": 45.8,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "9ccc89cd-8e89-11f1-ba48-f6f4dece2b5d",
+    "shortId": "9ccc89",
+    "name": "3",
+    "creator": "Kolabox booth",
+    "ratio": "A4/A3",
+    "subfolder": "others",
+    "slotsCount": 2,
+    "usedTimes": 20045,
+    "frameFile": "3_A4xA3_2slots_9ccc89.png",
+    "frameUrl": "/assets/jepreto-frames/others/3_A4xA3_2slots_9ccc89.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/3_A4xA3_2slots_9ccc89.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1785685711074-1001315287.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 25.4,
+        "left": 5.1,
+        "width": 90.1,
+        "height": 36.5,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 68.7,
+        "left": 5.5,
+        "width": 47.2,
+        "height": 26.8,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "25d1c640-5c07-11f0-8c06-82f9d1e92f26",
+    "shortId": "25d1c6",
+    "name": "Hindia - Everything u are 2x3",
+    "creator": "Jepreto",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 19973,
+    "frameFile": "hindia-everything-u-are-2x3_2x3_6slots_25d1c6.png",
+    "frameUrl": "/assets/jepreto-frames/cards/hindia-everything-u-are-2x3_2x3_6slots_25d1c6.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/hindia-everything-u-are-2x3_2x3_6slots_25d1c6.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751984620266-Gray_FINAL.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7.1,
+        "left": 2.2,
+        "width": 45.8,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 35.8,
+        "left": 2.2,
+        "width": 45.8,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 64.9,
+        "left": 2.2,
+        "width": 45.8,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 7.1,
+        "left": 52,
+        "width": 45.8,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 35.8,
+        "left": 52,
+        "width": 45.8,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 64.9,
+        "left": 52,
+        "width": 45.8,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "693b8dfa-4237-11f1-9814-829f9b823469",
+    "shortId": "693b8d",
+    "name": "Catch It Polaroid",
+    "creator": "catchit box",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 19378,
+    "frameFile": "catch-it-polaroid_1x3_3slots_693b8d.png",
+    "frameUrl": "/assets/jepreto-frames/strips/catch-it-polaroid_1x3_3slots_693b8d.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/catch-it-polaroid_1x3_3slots_693b8d.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1777294118034-Frame_Polaroid.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 26.9,
+        "left": 2.1,
+        "width": 96.1,
+        "height": 20.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 50.8,
+        "left": 2,
+        "width": 96.1,
+        "height": 20.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 74.7,
+        "left": 1.3,
+        "width": 96.1,
+        "height": 20.6,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "e3a03794-e489-42f0-9237-78a320a32167",
+    "shortId": "e3a037",
+    "name": "One Piece Bounty 3x4",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 19041,
+    "frameFile": "one-piece-bounty-3x4_1x3_3slots_e3a037.png",
+    "frameUrl": "/assets/jepreto-frames/strips/one-piece-bounty-3x4_1x3_3slots_e3a037.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/one-piece-bounty-3x4_1x3_3slots_e3a037.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751913922734-wanted_1x3_final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 9,
+        "left": 2,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 35,
+        "left": 2,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 62,
+        "left": 2.3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "bb8508c6-7a8e-11f1-9e39-6af2582b5e5d",
+    "shortId": "bb8508",
+    "name": "couple8",
+    "creator": "andi syafri",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 4,
+    "usedTimes": 17320,
+    "frameFile": "couple8_2x3_4slots_bb8508.png",
+    "frameUrl": "/assets/jepreto-frames/cards/couple8_2x3_4slots_bb8508.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/couple8_2x3_4slots_bb8508.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1783488880370-yt.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 1.5,
+        "left": 2,
+        "width": 45.7,
+        "height": 23.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 24.5,
+        "left": 2.5,
+        "width": 45.7,
+        "height": 23.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 48.1,
+        "left": 2.3,
+        "width": 45.7,
+        "height": 23.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 72.7,
+        "left": 2.6,
+        "width": 45.7,
+        "height": 23.2,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "a7bca14c-2da9-11f1-9529-62a09b96abf0",
+    "shortId": "a7bca1",
+    "name": "fruits",
+    "creator": "M.TAUFIK ILHAM",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 4,
+    "usedTimes": 16742,
+    "frameFile": "fruits_2x3_4slots_a7bca1.png",
+    "frameUrl": "/assets/jepreto-frames/cards/fruits_2x3_4slots_a7bca1.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/fruits_2x3_4slots_a7bca1.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1775034211071-fruit.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 20.6,
+        "left": 7.8,
+        "width": 36.1,
+        "height": 15.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 19.2,
+        "left": 53.2,
+        "width": 38,
+        "height": 16.3,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 61.5,
+        "left": 6,
+        "width": 38,
+        "height": 16.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 62.6,
+        "left": 51.3,
+        "width": 40.9,
+        "height": 17.5,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "edadac13-44d5-11f1-9814-829f9b823469",
+    "shortId": "edadac",
+    "name": "cingkucing",
+    "creator": "Hamdan Hamdan",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 8,
+    "usedTimes": 16740,
+    "frameFile": "cingkucing_2x3_8slots_edadac.png",
+    "frameUrl": "/assets/jepreto-frames/cards/cingkucing_2x3_8slots_edadac.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/cingkucing_2x3_8slots_edadac.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1777582103025-IMG_2563.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 2.8,
+        "left": 1.6,
+        "width": 44.3,
+        "height": 18.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 24.5,
+        "left": 1.6,
+        "width": 44.3,
+        "height": 18.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 46.2,
+        "left": 1.6,
+        "width": 44.3,
+        "height": 18.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 67.8,
+        "left": 1.6,
+        "width": 44.3,
+        "height": 18.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 2.8,
+        "left": 53.8,
+        "width": 44,
+        "height": 18.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 24.5,
+        "left": 53.8,
+        "width": 44,
+        "height": 18.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 6,
+        "top": 46.2,
+        "left": 53.8,
+        "width": 44,
+        "height": 18.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 7,
+        "top": 67.8,
+        "left": 53.8,
+        "width": 44,
+        "height": 18.8,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "e123ee91-713b-4f09-9ba8-c35d218123e3",
+    "shortId": "e123ee",
+    "name": "CAS - Apocalypse (3)",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 16724,
+    "frameFile": "cas-apocalypse-3_1x3_3slots_e123ee.png",
+    "frameUrl": "/assets/jepreto-frames/strips/cas-apocalypse-3_1x3_3slots_e123ee.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/cas-apocalypse-3_1x3_3slots_e123ee.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751913242527-Apocalypse_1x3_final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 5,
+        "left": 4,
+        "width": 93,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 32,
+        "left": 3,
+        "width": 93,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 61,
+        "left": 5,
+        "width": 93,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "24f56d42-dbe0-11f0-b0e8-62a09b96abf0",
+    "shortId": "24f56d",
+    "name": "NEWS PAPER",
+    "creator": "jepret cambox",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 16702,
+    "frameFile": "news-paper_2x3_6slots_24f56d.png",
+    "frameUrl": "/assets/jepreto-frames/cards/news-paper_2x3_6slots_24f56d.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/news-paper_2x3_6slots_24f56d.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1766041617283-newspaper_template_jepreto.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 31,
+        "left": 3,
+        "width": 47,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 31,
+        "left": 50,
+        "width": 47,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 51,
+        "left": 4,
+        "width": 47,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 51,
+        "left": 50,
+        "width": 47,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 72,
+        "left": 4,
+        "width": 47,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 72,
+        "left": 51,
+        "width": 46,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "e81a2a74-7a34-458a-ba7a-a07cc6c09e0a",
+    "shortId": "e81a2a",
+    "name": "Taylor Swift (4)",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 16644,
+    "frameFile": "taylor-swift-4_1x3_3slots_e81a2a.png",
+    "frameUrl": "/assets/jepreto-frames/strips/taylor-swift-4_1x3_3slots_e81a2a.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/taylor-swift-4_1x3_3slots_e81a2a.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751913805956-Taylor_Swift_1x3_final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 8.1,
+        "left": 5.5,
+        "width": 91.4,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 34.6,
+        "left": 5.5,
+        "width": 91.4,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 59.8,
+        "left": 5.5,
+        "width": 91.4,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "2425083b-f824-11f0-b0e8-62a09b96abf0",
+    "shortId": "242508",
+    "name": "Hirono Red Photostrip",
+    "creator": "yuko",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 16544,
+    "frameFile": "hirono-red-photostrip_1x3_3slots_242508.png",
+    "frameUrl": "/assets/jepreto-frames/strips/hirono-red-photostrip_1x3_3slots_242508.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/hirono-red-photostrip_1x3_3slots_242508.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1769149454029-red_photostrip__1_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 10,
+        "left": 2,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 32,
+        "left": 1,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 53,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "80d729db-4174-11f1-9814-829f9b823469",
+    "shortId": "80d729",
+    "name": "Breaking News Blok M ",
+    "creator": "Jepreto",
+    "ratio": "A4/A3",
+    "subfolder": "others",
+    "slotsCount": 3,
+    "usedTimes": 15491,
+    "frameFile": "breaking-news-blok-m_A4xA3_3slots_80d729.png",
+    "frameUrl": "/assets/jepreto-frames/others/breaking-news-blok-m_A4xA3_3slots_80d729.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/breaking-news-blok-m_A4xA3_3slots_80d729.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1777210405522-a3_newspaper_design-01.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 24,
+        "left": 3.6,
+        "width": 93.5,
+        "height": 42.5,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 66.6,
+        "left": 3.3,
+        "width": 45.3,
+        "height": 20.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 66.5,
+        "left": 50.5,
+        "width": 45.2,
+        "height": 20.6,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "b451e414-6631-11f1-9e39-6af2582b5e5d",
+    "shortId": "b451e4",
+    "name": "5L",
+    "creator": "jepret cambox",
+    "ratio": "A4/A3",
+    "subfolder": "others",
+    "slotsCount": 6,
+    "usedTimes": 15409,
+    "frameFile": "5l_A4xA3_6slots_b451e4.png",
+    "frameUrl": "/assets/jepreto-frames/others/5l_A4xA3_6slots_b451e4.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/5l_A4xA3_6slots_b451e4.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1781249908610-19.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 5.4,
+        "left": 5.1,
+        "width": 39.7,
+        "height": 18,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 0,
+        "top": 5.4,
+        "left": 55,
+        "width": 39.7,
+        "height": 18,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 27.8,
+        "left": 5.1,
+        "width": 39.7,
+        "height": 17.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 27.8,
+        "left": 54.5,
+        "width": 39.7,
+        "height": 17.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 50.3,
+        "left": 5.1,
+        "width": 39.7,
+        "height": 17.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 49.9,
+        "left": 55,
+        "width": 39.7,
+        "height": 17.8,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "91af78a6-44a8-11f1-9814-829f9b823469",
+    "shortId": "91af78",
+    "name": "Ompreg MBG",
+    "creator": "MEMOFORIA",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 5,
+    "usedTimes": 15114,
+    "frameFile": "ompreg-mbg_2x3_5slots_91af78.png",
+    "frameUrl": "/assets/jepreto-frames/cards/ompreg-mbg_2x3_5slots_91af78.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/ompreg-mbg_2x3_5slots_91af78.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1777562621336-D-Template_4R.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 18.1,
+        "left": 9.2,
+        "width": 44.9,
+        "height": 25.7,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 55.3,
+        "left": 9.2,
+        "width": 47.3,
+        "height": 34.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 43.2,
+        "left": 60.2,
+        "width": 31.9,
+        "height": 21.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 65.8,
+        "left": 60.2,
+        "width": 31.9,
+        "height": 22.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 19.2,
+        "left": 62,
+        "width": 28.5,
+        "height": 21.4,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "4a7dfd46-3c16-11f1-b65e-62a09b96abf0",
+    "shortId": "4a7dfd",
+    "name": "arr Lizard",
+    "creator": "Adieb Arrosyid",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 14590,
+    "frameFile": "arr-lizard_2x3_6slots_4a7dfd.png",
+    "frameUrl": "/assets/jepreto-frames/cards/arr-lizard_2x3_6slots_4a7dfd.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/arr-lizard_2x3_6slots_4a7dfd.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1776620186058-23__2_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 11.5,
+        "left": 1.3,
+        "width": 47.5,
+        "height": 20.5,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 32.5,
+        "left": 1.6,
+        "width": 47.5,
+        "height": 20.3,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 53.3,
+        "left": 1.4,
+        "width": 47.5,
+        "height": 20.3,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 11.7,
+        "left": 51,
+        "width": 47.5,
+        "height": 20.3,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 32.4,
+        "left": 51,
+        "width": 47.5,
+        "height": 20.3,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 53.2,
+        "left": 51,
+        "width": 47.5,
+        "height": 20.3,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "2e53a6b7-ac08-49ac-ab3f-60ed06a910b4",
+    "shortId": "2e53a6",
+    "name": "CAS Apocalypse",
+    "creator": "Jepreto",
+    "ratio": "unknown",
+    "subfolder": "others",
+    "slotsCount": 4,
+    "usedTimes": 14579,
+    "frameFile": "cas-apocalypse_other_4slots_2e53a6.png",
+    "frameUrl": "/assets/jepreto-frames/others/cas-apocalypse_other_4slots_2e53a6.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/cas-apocalypse_other_4slots_2e53a6.webp",
+    "sourceUrl": "https://jepreto.com/templates/1748181634936-template.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 2,
+        "left": 3,
+        "width": 95,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 23,
+        "left": 2,
+        "width": 95,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 45,
+        "left": 2,
+        "width": 95,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 69,
+        "left": 3,
+        "width": 95,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "1a501b51-799d-11f0-bbca-82f9d1e92f26",
+    "shortId": "1a501b",
+    "name": "Toy Story 1x3",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 14219,
+    "frameFile": "toy-story-1x3_1x3_3slots_1a501b.png",
+    "frameUrl": "/assets/jepreto-frames/strips/toy-story-1x3_1x3_3slots_1a501b.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/toy-story-1x3_1x3_3slots_1a501b.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1755237609178-Toy_Story_1x3_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 4,
+        "width": 95,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 31,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 56,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "30207d8b-6894-11f1-9e39-6af2582b5e5d",
+    "shortId": "30207d",
+    "name": "Polkadot",
+    "creator": "shafira",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 4,
+    "usedTimes": 14127,
+    "frameFile": "polkadot_1x3_4slots_30207d.png",
+    "frameUrl": "/assets/jepreto-frames/strips/polkadot_1x3_4slots_30207d.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/polkadot_1x3_4slots_30207d.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1781512109444-Untitled_design__13___1_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 2,
+        "left": 0,
+        "width": 98,
+        "height": 21.1,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 23.2,
+        "left": 0,
+        "width": 97.6,
+        "height": 21.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 45.3,
+        "left": 0,
+        "width": 99.8,
+        "height": 20.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 65.4,
+        "left": 2.6,
+        "width": 96.9,
+        "height": 19.5,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "b606f643-faac-11f0-b0e8-62a09b96abf0",
+    "shortId": "b606f6",
+    "name": "Red snoopy",
+    "creator": "yuko",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 3,
+    "usedTimes": 13943,
+    "frameFile": "red-snoopy_2x3_3slots_b606f6.png",
+    "frameUrl": "/assets/jepreto-frames/cards/red-snoopy_2x3_3slots_b606f6.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/red-snoopy_2x3_3slots_b606f6.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1769428012880-Red_snoopy.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 33,
+        "width": 56,
+        "height": 24,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 29,
+        "left": 36,
+        "width": 58,
+        "height": 25,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 50,
+        "left": 39,
+        "width": 55,
+        "height": 24,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "ffcd0520-9832-11f0-85b3-82f9d1e92f26",
+    "shortId": "ffcd05",
+    "name": "90s",
+    "creator": "Antonia Cheryl",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 13778,
+    "frameFile": "90s_1x3_3slots_ffcd05.png",
+    "frameUrl": "/assets/jepreto-frames/strips/90s_1x3_3slots_ffcd05.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/90s_1x3_3slots_ffcd05.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1758600524115-90s.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 6,
+        "left": 2,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 37,
+        "left": 2,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 68,
+        "left": 1,
+        "width": 97,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "e4810d1e-b68c-11f0-85b3-82f9d1e92f26",
+    "shortId": "e4810d",
+    "name": "Nailong 2x3",
+    "creator": "Jepreto",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 13009,
+    "frameFile": "nailong-2x3_2x3_6slots_e4810d.png",
+    "frameUrl": "/assets/jepreto-frames/cards/nailong-2x3_2x3_6slots_e4810d.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/nailong-2x3_2x3_6slots_e4810d.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1761937667915-2x3_Nailong_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 6,
+        "left": 1,
+        "width": 50,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 7,
+        "left": 50,
+        "width": 50,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 31,
+        "left": 1,
+        "width": 50,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 31,
+        "left": 50,
+        "width": 50,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 56,
+        "left": 1,
+        "width": 50,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 56,
+        "left": 50,
+        "width": 50,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "4fb95730-770d-425e-b1ab-aab12bfcbd5e",
+    "shortId": "4fb957",
+    "name": "Tarot",
+    "creator": "Jepreto",
+    "ratio": "unknown",
+    "subfolder": "others",
+    "slotsCount": 4,
+    "usedTimes": 12665,
+    "frameFile": "tarot_other_4slots_4fb957.png",
+    "frameUrl": "/assets/jepreto-frames/others/tarot_other_4slots_4fb957.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/tarot_other_4slots_4fb957.webp",
+    "sourceUrl": "https://jepreto.com/templates/1746093881106-template.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 6,
+        "left": 2,
+        "width": 95,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 28,
+        "left": 3,
+        "width": 95,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 50,
+        "left": 3,
+        "width": 95,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 71,
+        "left": 2,
+        "width": 95,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "3ddb20b0-3fea-11f1-83c3-a2fc5d182b52",
+    "shortId": "3ddb20",
+    "name": "Loopyy",
+    "creator": "Booth Mans",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 12564,
+    "frameFile": "loopyy_1x3_3slots_3ddb20.png",
+    "frameUrl": "/assets/jepreto-frames/strips/loopyy_1x3_3slots_3ddb20.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/loopyy_1x3_3slots_3ddb20.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1777041071682-IMG_1107.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 8.8,
+        "left": 4.9,
+        "width": 90.8,
+        "height": 20.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 33.1,
+        "left": 4.9,
+        "width": 90.8,
+        "height": 20.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 57.3,
+        "left": 4.9,
+        "width": 90.8,
+        "height": 20.2,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "99ea4b93-5c01-11f0-8c06-82f9d1e92f26",
+    "shortId": "99ea4b",
+    "name": "Arctic Monkey 2x3",
+    "creator": "Jepreto",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 12055,
+    "frameFile": "arctic-monkey-2x3_2x3_6slots_99ea4b.png",
+    "frameUrl": "/assets/jepreto-frames/cards/arctic-monkey-2x3_2x3_6slots_99ea4b.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/arctic-monkey-2x3_2x3_6slots_99ea4b.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751982238102-Artic_Monkeys_FINAL.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 1,
+        "width": 49,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 7,
+        "left": 49,
+        "width": 49,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 33,
+        "left": 1,
+        "width": 50,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 33,
+        "left": 49,
+        "width": 51,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 60,
+        "left": 1,
+        "width": 49,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 60,
+        "left": 50,
+        "width": 49,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "90fdde81-9e04-11f0-85b3-82f9d1e92f26",
+    "shortId": "90fdde",
+    "name": "XXL frame - lany",
+    "creator": "7. I Dewa Gede Natih Marcionatha 8G",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 11890,
+    "frameFile": "xxl-frame-lany_1x3_3slots_90fdde.png",
+    "frameUrl": "/assets/jepreto-frames/strips/xxl-frame-lany_1x3_3slots_90fdde.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/xxl-frame-lany_1x3_3slots_90fdde.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1759240288347-shassy_1__1_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 8,
+        "left": 6,
+        "width": 90,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 30.9,
+        "left": 6,
+        "width": 90.3,
+        "height": 20.1,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 55,
+        "left": 5,
+        "width": 90,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "1f1edee1-8993-11f1-a610-da8dc507fa14",
+    "shortId": "1f1ede",
+    "name": "meme dua",
+    "creator": "memoriatime",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 4,
+    "usedTimes": 11203,
+    "frameFile": "meme-dua_2x3_4slots_1f1ede.png",
+    "frameUrl": "/assets/jepreto-frames/cards/meme-dua_2x3_4slots_1f1ede.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/meme-dua_2x3_4slots_1f1ede.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1785140038880-IMG_4373.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 2.6,
+        "left": 3.3,
+        "width": 47.5,
+        "height": 22.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 25.6,
+        "left": 3.3,
+        "width": 47.5,
+        "height": 22.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 48.7,
+        "left": 3.3,
+        "width": 47.5,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 71.7,
+        "left": 3.3,
+        "width": 47.5,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "e349dfc2-edfd-11f0-b0e8-62a09b96abf0",
+    "shortId": "e349df",
+    "name": "CUTE TELEVISION FRAME",
+    "creator": "jepret cambox",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 11107,
+    "frameFile": "cute-television-frame_2x3_6slots_e349df.png",
+    "frameUrl": "/assets/jepreto-frames/cards/cute-television-frame_2x3_6slots_e349df.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/cute-television-frame_2x3_6slots_e349df.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1768033512876-NEW_JEPRET_CAMBOX_6.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 9,
+        "left": 4,
+        "width": 46,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 34,
+        "left": 2,
+        "width": 46,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 60,
+        "left": 2,
+        "width": 46,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 19,
+        "left": 50,
+        "width": 46,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 45,
+        "left": 49,
+        "width": 48,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 72,
+        "left": 50,
+        "width": 45,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "fdf1d5ef-656e-11f0-8c06-82f9d1e92f26",
+    "shortId": "fdf1d5",
+    "name": "Reality Club 1x3",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 10860,
+    "frameFile": "reality-club-1x3_1x3_3slots_fdf1d5.png",
+    "frameUrl": "/assets/jepreto-frames/strips/reality-club-1x3_1x3_3slots_fdf1d5.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/reality-club-1x3_1x3_3slots_fdf1d5.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1753018781565-RC_1x3_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 31,
+        "left": 4,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 55,
+        "left": 0,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "085d607e-a0e2-11f0-85b3-82f9d1e92f26",
+    "shortId": "085d60",
+    "name": "perunggu",
+    "creator": "varda aufara arshavin",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 10478,
+    "frameFile": "perunggu_1x3_3slots_085d60.png",
+    "frameUrl": "/assets/jepreto-frames/strips/perunggu_1x3_3slots_085d60.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/perunggu_1x3_3slots_085d60.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1759555262677-perunggu_lagi__1_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 13.7,
+        "left": 4.3,
+        "width": 91.4,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 37.4,
+        "left": 4.3,
+        "width": 91.4,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 60.8,
+        "left": 4.3,
+        "width": 91.4,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "b1ee8384-87bc-4a55-a5a6-5264c860dc6c",
+    "shortId": "b1ee83",
+    "name": "hindia - Cincin (3)",
+    "creator": "Jepreto",
+    "ratio": "unknown",
+    "subfolder": "others",
+    "slotsCount": 3,
+    "usedTimes": 10444,
+    "frameFile": "hindia-cincin-3_other_3slots_b1ee83.png",
+    "frameUrl": "/assets/jepreto-frames/others/hindia-cincin-3_other_3slots_b1ee83.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/hindia-cincin-3_other_3slots_b1ee83.webp",
+    "sourceUrl": "https://jepreto.com/templates/1748927556145-template.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 2,
+        "left": 3.4,
+        "width": 93.7,
+        "height": 20.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 29.5,
+        "left": 3.4,
+        "width": 93.7,
+        "height": 20.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 56.9,
+        "left": 3.4,
+        "width": 93.7,
+        "height": 20.8,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "246b05bc-1322-11f1-9d44-62a09b96abf0",
+    "shortId": "246b05",
+    "name": "GANIM X MOTOMESA",
+    "creator": "Fitrah Ramdani",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 8,
+    "usedTimes": 10290,
+    "frameFile": "ganim-x-motomesa_2x3_8slots_246b05.png",
+    "frameUrl": "/assets/jepreto-frames/cards/ganim-x-motomesa_2x3_8slots_246b05.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/ganim-x-motomesa_2x3_8slots_246b05.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1772117277063-p.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 15,
+        "left": 2,
+        "width": 45,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 34,
+        "left": 4,
+        "width": 45,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 53,
+        "left": 4,
+        "width": 45,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 70,
+        "left": 2,
+        "width": 45,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 15,
+        "left": 52,
+        "width": 45,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 34,
+        "left": 52,
+        "width": 45,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 6,
+        "top": 52,
+        "left": 51,
+        "width": 45,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 7,
+        "top": 71,
+        "left": 52,
+        "width": 45,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "5437e953-cf87-11f0-b49e-82f9d1e92f26",
+    "shortId": "5437e9",
+    "name": "Iphone pic",
+    "creator": "Meoww",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 10017,
+    "frameFile": "iphone-pic_1x3_3slots_5437e9.png",
+    "frameUrl": "/assets/jepreto-frames/strips/iphone-pic_1x3_3slots_5437e9.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/iphone-pic_1x3_3slots_5437e9.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1764684057496-8.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 10,
+        "left": 9,
+        "width": 91,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 40,
+        "left": 0,
+        "width": 95,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 68,
+        "left": 5,
+        "width": 95,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "b5427bed-5356-11f1-bab4-e671895e16ce",
+    "shortId": "b5427b",
+    "name": "Rupiah Bagus",
+    "creator": "Willie De King",
+    "ratio": "A4/A3",
+    "subfolder": "others",
+    "slotsCount": 1,
+    "usedTimes": 10007,
+    "frameFile": "rupiah-bagus_A4xA3_1slots_b5427b.png",
+    "frameUrl": "/assets/jepreto-frames/others/rupiah-bagus_A4xA3_1slots_b5427b.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/rupiah-bagus_A4xA3_1slots_b5427b.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1779176708533-IMG_5438.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 33.6,
+        "left": 35.7,
+        "width": 58.9,
+        "height": 31.3,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "a1bec45d-b68c-11f0-85b3-82f9d1e92f26",
+    "shortId": "a1bec4",
+    "name": "Nailong 1x3",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 9685,
+    "frameFile": "nailong-1x3_1x3_3slots_a1bec4.png",
+    "frameUrl": "/assets/jepreto-frames/strips/nailong-1x3_1x3_3slots_a1bec4.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/nailong-1x3_1x3_3slots_a1bec4.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1761937555864-1x3_Nailong_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 5,
+        "width": 92,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 32,
+        "left": 5,
+        "width": 92,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 57,
+        "left": 5,
+        "width": 92,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "27d89912-656f-11f0-8c06-82f9d1e92f26",
+    "shortId": "27d899",
+    "name": "Reality Club 2x3",
+    "creator": "Jepreto",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 9665,
+    "frameFile": "reality-club-2x3_2x3_6slots_27d899.png",
+    "frameUrl": "/assets/jepreto-frames/cards/reality-club-2x3_2x3_6slots_27d899.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/reality-club-2x3_2x3_6slots_27d899.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1753018851890-RC_2x3_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 1,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 7,
+        "left": 51,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 32,
+        "left": 1,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 32,
+        "left": 51,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 56,
+        "left": 1,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 56,
+        "left": 51,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "bde59c89-342a-11f1-9445-62a09b96abf0",
+    "shortId": "bde59c",
+    "name": "Zootopia Frame",
+    "creator": "Nurhidayah Maulidia",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 9199,
+    "frameFile": "zootopia-frame_1x3_3slots_bde59c.png",
+    "frameUrl": "/assets/jepreto-frames/strips/zootopia-frame_1x3_3slots_bde59c.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/zootopia-frame_1x3_3slots_bde59c.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1775749360362-Tambahkan_judul__3_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 8.6,
+        "left": 0,
+        "width": 100,
+        "height": 21.7,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 33.2,
+        "left": 0,
+        "width": 100,
+        "height": 21.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 58.2,
+        "left": 0,
+        "width": 100,
+        "height": 21.4,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "6ea15684-fb5a-11f0-b0e8-62a09b96abf0",
+    "shortId": "6ea156",
+    "name": "CUTE LEOPARD FRAME",
+    "creator": "jepret cambox",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 8,
+    "usedTimes": 8983,
+    "frameFile": "cute-leopard-frame_2x3_8slots_6ea156.png",
+    "frameUrl": "/assets/jepreto-frames/cards/cute-leopard-frame_2x3_8slots_6ea156.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/cute-leopard-frame_2x3_8slots_6ea156.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1769502625342-frame_1.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 5,
+        "left": 0,
+        "width": 50,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 26,
+        "left": 0,
+        "width": 50,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 45,
+        "left": 0,
+        "width": 50,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 65,
+        "left": 0,
+        "width": 50,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 5,
+        "left": 50,
+        "width": 50,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 26,
+        "left": 50,
+        "width": 50,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 6,
+        "top": 45,
+        "left": 50,
+        "width": 50,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 7,
+        "top": 66,
+        "left": 50,
+        "width": 50,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "d4a0aa09-813e-11f1-a867-4aafc47b4680",
+    "shortId": "d4a0aa",
+    "name": "Cute Leopard",
+    "creator": "One Frame",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 8,
+    "usedTimes": 8837,
+    "frameFile": "cute-leopard_2x3_8slots_d4a0aa.png",
+    "frameUrl": "/assets/jepreto-frames/cards/cute-leopard_2x3_8slots_d4a0aa.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/cute-leopard_2x3_8slots_d4a0aa.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1784224225714-Cute_Leopard.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 13.5,
+        "left": 5.1,
+        "width": 43.9,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 34.6,
+        "left": 4.9,
+        "width": 44,
+        "height": 20.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 55.9,
+        "left": 5.1,
+        "width": 43.9,
+        "height": 19.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 76.9,
+        "left": 5.1,
+        "width": 43.6,
+        "height": 17.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 13.5,
+        "left": 50.7,
+        "width": 43.9,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 34.6,
+        "left": 50.7,
+        "width": 43.9,
+        "height": 20.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 6,
+        "top": 55.9,
+        "left": 50.7,
+        "width": 43.9,
+        "height": 19.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 7,
+        "top": 76.9,
+        "left": 50.7,
+        "width": 43.9,
+        "height": 17.4,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "eba329e7-842b-11f0-bbca-82f9d1e92f26",
+    "shortId": "eba329",
+    "name": "Spiderman 2x3",
+    "creator": "Jepreto",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 8796,
+    "frameFile": "spiderman-2x3_2x3_6slots_eba329.png",
+    "frameUrl": "/assets/jepreto-frames/cards/spiderman-2x3_2x3_6slots_eba329.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/spiderman-2x3_2x3_6slots_eba329.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1756398459745-Spiderman_2x3_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 1,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 7,
+        "left": 51,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 32,
+        "left": 1,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 32,
+        "left": 51,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 57,
+        "left": 1,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 57,
+        "left": 51,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "3e0fe5d6-49df-11f0-8c06-82f9d1e92f26",
+    "shortId": "3e0fe5",
+    "name": "billie - hit me hard and soft",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 8292,
+    "frameFile": "billie-hit-me-hard-and-soft_1x3_3slots_3e0fe5.png",
+    "frameUrl": "/assets/jepreto-frames/strips/billie-hit-me-hard-and-soft_1x3_3slots_3e0fe5.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/billie-hit-me-hard-and-soft_1x3_3slots_3e0fe5.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751914202844-billie_1x3_final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 6,
+        "left": 2,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 34,
+        "left": 2,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 60,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "a2620a71-88ab-11f0-bbca-82f9d1e92f26",
+    "shortId": "a2620a",
+    "name": "Biru vintage Levi's background ",
+    "creator": "Nachrowi EL",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 4,
+    "usedTimes": 8035,
+    "frameFile": "biru-vintage-levis-background_1x3_4slots_a2620a.png",
+    "frameUrl": "/assets/jepreto-frames/strips/biru-vintage-levis-background_1x3_4slots_a2620a.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/biru-vintage-levis-background_1x3_4slots_a2620a.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1756893117815-Desain_tanpa_judul__14_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 6,
+        "left": 4,
+        "width": 90,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 29,
+        "left": 3,
+        "width": 90,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 49,
+        "left": 4,
+        "width": 90,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 71,
+        "left": 5,
+        "width": 90,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "ee047e7e-f5ca-11f0-b0e8-62a09b96abf0",
+    "shortId": "ee047e",
+    "name": "pinkaholic",
+    "creator": "Nurul Salwa Humaira",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 7935,
+    "frameFile": "pinkaholic_1x3_3slots_ee047e.png",
+    "frameUrl": "/assets/jepreto-frames/strips/pinkaholic_1x3_3slots_ee047e.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/pinkaholic_1x3_3slots_ee047e.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1768891235917-pinkaholic.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 9.7,
+        "left": 3,
+        "width": 94,
+        "height": 20.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 35.2,
+        "left": 6,
+        "width": 94,
+        "height": 20.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 64,
+        "left": 6,
+        "width": 68,
+        "height": 15,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "c4a85e79-e58c-11f0-b0e8-62a09b96abf0",
+    "shortId": "c4a85e",
+    "name": "DENIM TEMPLATE",
+    "creator": "jepret cambox",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 7709,
+    "frameFile": "denim-template_1x3_3slots_c4a85e.png",
+    "frameUrl": "/assets/jepreto-frames/strips/denim-template_1x3_3slots_c4a85e.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/denim-template_1x3_3slots_c4a85e.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1767105319075-denim.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 8,
+        "left": 8,
+        "width": 86,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 30,
+        "left": 8,
+        "width": 86,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 52,
+        "left": 7,
+        "width": 86,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "b67a39cb-8974-11f0-bbca-82f9d1e92f26",
+    "shortId": "b67a39",
+    "name": "Snoopy 1x3",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 7685,
+    "frameFile": "snoopy-1x3_1x3_3slots_b67a39.png",
+    "frameUrl": "/assets/jepreto-frames/strips/snoopy-1x3_1x3_3slots_b67a39.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/snoopy-1x3_1x3_3slots_b67a39.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1756979480430-Snoopy_1x3_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 1,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 32,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 56,
+        "left": 0,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "29862483-8993-11f1-a610-da8dc507fa14",
+    "shortId": "298624",
+    "name": "meme tiga",
+    "creator": "memoriatime",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 4,
+    "usedTimes": 7492,
+    "frameFile": "meme-tiga_2x3_4slots_298624.png",
+    "frameUrl": "/assets/jepreto-frames/cards/meme-tiga_2x3_4slots_298624.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/meme-tiga_2x3_4slots_298624.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1785140057010-IMG_4375.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 2.6,
+        "left": 3.3,
+        "width": 47.5,
+        "height": 22.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 25.6,
+        "left": 3.3,
+        "width": 47.5,
+        "height": 22.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 48.7,
+        "left": 3.3,
+        "width": 47.5,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 71.7,
+        "left": 3.3,
+        "width": 47.5,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "67020e17-9848-11f0-85b3-82f9d1e92f26",
+    "shortId": "67020e",
+    "name": "y2k blue",
+    "creator": "aisaisais",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 4,
+    "usedTimes": 7330,
+    "frameFile": "y2k-blue_1x3_4slots_67020e.png",
+    "frameUrl": "/assets/jepreto-frames/strips/y2k-blue_1x3_4slots_67020e.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/y2k-blue_1x3_4slots_67020e.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1758609716585-y2k_blue.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 6,
+        "left": 7,
+        "width": 85,
+        "height": 18,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 27,
+        "left": 9,
+        "width": 82,
+        "height": 18,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 47,
+        "left": 9,
+        "width": 82,
+        "height": 18,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 68,
+        "left": 9,
+        "width": 82,
+        "height": 18,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "152e818a-b26f-11f0-85b3-82f9d1e92f26",
+    "shortId": "152e81",
+    "name": "1989 Taylor Swift",
+    "creator": "Kenscrae",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 7103,
+    "frameFile": "1989-taylor-swift_1x3_3slots_152e81.png",
+    "frameUrl": "/assets/jepreto-frames/strips/1989-taylor-swift_1x3_3slots_152e81.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/1989-taylor-swift_1x3_3slots_152e81.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1761485059925-Frame_1989__1_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 13,
+        "width": 74,
+        "height": 16,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 31,
+        "left": 14,
+        "width": 72,
+        "height": 16,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 55,
+        "left": 14,
+        "width": 73,
+        "height": 16,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "2c372b3c-26bd-11f1-9359-62a09b96abf0",
+    "shortId": "2c372b",
+    "name": "ompreg mbg coquette",
+    "creator": "Honesty Mustika",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 5,
+    "usedTimes": 7095,
+    "frameFile": "ompreg-mbg-coquette_2x3_5slots_2c372b.png",
+    "frameUrl": "/assets/jepreto-frames/cards/ompreg-mbg-coquette_2x3_5slots_2c372b.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/ompreg-mbg-coquette_2x3_5slots_2c372b.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1774272935661-jepreto_ompreg.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 17.9,
+        "left": 4.2,
+        "width": 50,
+        "height": 21.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 54.2,
+        "left": 6.8,
+        "width": 59.1,
+        "height": 25.3,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 14.1,
+        "left": 49.4,
+        "width": 45,
+        "height": 19.3,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 39.8,
+        "left": 53.8,
+        "width": 39.9,
+        "height": 17.1,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 62.5,
+        "left": 59.9,
+        "width": 39.9,
+        "height": 17.1,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "130dd51e-88a1-11f1-a610-da8dc507fa14",
+    "shortId": "130dd5",
+    "name": "SPIDERMAN 1",
+    "creator": "Eterna",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 3,
+    "usedTimes": 7038,
+    "frameFile": "spiderman-1_2x3_3slots_130dd5.png",
+    "frameUrl": "/assets/jepreto-frames/cards/spiderman-1_2x3_3slots_130dd5.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/spiderman-1_2x3_3slots_130dd5.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1785036081130-1774.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 15.1,
+        "left": 43,
+        "width": 48.6,
+        "height": 20.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 43.7,
+        "left": 6.2,
+        "width": 48.6,
+        "height": 20.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 72.1,
+        "left": 42.8,
+        "width": 48.6,
+        "height": 20.6,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "442cb4da-5c06-11f0-8c06-82f9d1e92f26",
+    "shortId": "442cb4",
+    "name": "CAS - Apocalypse 2x3",
+    "creator": "Jepreto",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 6996,
+    "frameFile": "cas-apocalypse-2x3_2x3_6slots_442cb4.png",
+    "frameUrl": "/assets/jepreto-frames/cards/cas-apocalypse-2x3_2x3_6slots_442cb4.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/cas-apocalypse-2x3_2x3_6slots_442cb4.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1752577160049-Cas_2x3_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 4.8,
+        "left": 4.9,
+        "width": 41.6,
+        "height": 18.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 32.8,
+        "left": 4.9,
+        "width": 41.6,
+        "height": 18.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 61,
+        "left": 4.9,
+        "width": 41.6,
+        "height": 18.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 4.8,
+        "left": 53.5,
+        "width": 41.6,
+        "height": 18.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 32.8,
+        "left": 53.5,
+        "width": 41.6,
+        "height": 18.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 61,
+        "left": 53.5,
+        "width": 41.6,
+        "height": 18.8,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "2a7ffd5c-6173-11f0-8c06-82f9d1e92f26",
+    "shortId": "2a7ffd",
+    "name": "Inside Out 2",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 6949,
+    "frameFile": "inside-out-2_1x3_3slots_2a7ffd.png",
+    "frameUrl": "/assets/jepreto-frames/strips/inside-out-2_1x3_3slots_2a7ffd.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/inside-out-2_1x3_3slots_2a7ffd.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1752663778377-Insede_Out_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 3,
+        "width": 95,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 31,
+        "left": 2,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 55,
+        "left": 2,
+        "width": 95,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "1bf95210-923c-11f0-85b3-82f9d1e92f26",
+    "shortId": "1bf952",
+    "name": "Camera Roll",
+    "creator": "Antonia Cheryl",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 4,
+    "usedTimes": 6876,
+    "frameFile": "camera-roll_1x3_4slots_1bf952.png",
+    "frameUrl": "/assets/jepreto-frames/strips/camera-roll_1x3_4slots_1bf952.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/camera-roll_1x3_4slots_1bf952.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1757944729883-cam_roll.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 6,
+        "left": 0,
+        "width": 100,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 28,
+        "left": 0,
+        "width": 100,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 51,
+        "left": 0,
+        "width": 100,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 73,
+        "left": 0,
+        "width": 100,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "2dd4f7a7-884e-11f0-bbca-82f9d1e92f26",
+    "shortId": "2dd4f7",
+    "name": "blue template",
+    "creator": "uli aulia",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 6641,
+    "frameFile": "blue-template_2x3_6slots_2dd4f7.png",
+    "frameUrl": "/assets/jepreto-frames/cards/blue-template_2x3_6slots_2dd4f7.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/blue-template_2x3_6slots_2dd4f7.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1769958021232-Blue_Template_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 2,
+        "width": 47,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 31,
+        "left": 2,
+        "width": 47,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 55,
+        "left": 2,
+        "width": 47,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 6,
+        "left": 51,
+        "width": 47,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 31,
+        "left": 51,
+        "width": 47,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 56,
+        "left": 51,
+        "width": 47,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "03e4d1dd-8993-11f1-a610-da8dc507fa14",
+    "shortId": "03e4d1",
+    "name": "meme cat",
+    "creator": "memoriatime",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 4,
+    "usedTimes": 6585,
+    "frameFile": "meme-cat_2x3_4slots_03e4d1.png",
+    "frameUrl": "/assets/jepreto-frames/cards/meme-cat_2x3_4slots_03e4d1.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/meme-cat_2x3_4slots_03e4d1.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1785139993698-IMG_4371.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 2.6,
+        "left": 3.3,
+        "width": 47.5,
+        "height": 22.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 25.6,
+        "left": 3.3,
+        "width": 47.5,
+        "height": 22.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 48.7,
+        "left": 3.3,
+        "width": 47.5,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 71.7,
+        "left": 3.3,
+        "width": 47.5,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "d1c2f20d-5c08-11f0-8c06-82f9d1e92f26",
+    "shortId": "d1c2f2",
+    "name": "One piece Bounty 2x3",
+    "creator": "Jepreto",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 6556,
+    "frameFile": "one-piece-bounty-2x3_2x3_6slots_d1c2f2.png",
+    "frameUrl": "/assets/jepreto-frames/cards/one-piece-bounty-2x3_2x3_6slots_d1c2f2.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/one-piece-bounty-2x3_2x3_6slots_d1c2f2.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751985338296-Wanted_FINAL.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 14.5,
+        "left": 2.2,
+        "width": 45.5,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 35,
+        "left": 2.2,
+        "width": 45.5,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 55.7,
+        "left": 2.2,
+        "width": 45.5,
+        "height": 18.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 55.7,
+        "left": 52,
+        "width": 45.2,
+        "height": 18.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 14.5,
+        "left": 52.3,
+        "width": 45.5,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 35,
+        "left": 52.3,
+        "width": 45.5,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "db8fad73-fc67-11f0-b0e8-62a09b96abf0",
+    "shortId": "db8fad",
+    "name": "Blue ocean tincase",
+    "creator": "yuko",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 1,
+    "usedTimes": 6531,
+    "frameFile": "blue-ocean-tincase_2x3_1slots_db8fad.png",
+    "frameUrl": "/assets/jepreto-frames/cards/blue-ocean-tincase_2x3_1slots_db8fad.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/blue-ocean-tincase_2x3_1slots_db8fad.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1769618342954-PHOTOEDIT__1_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 54,
+        "left": 24,
+        "width": 53,
+        "height": 23,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "6fae89c5-b3e7-11f0-85b3-82f9d1e92f26",
+    "shortId": "6fae89",
+    "name": "School Vibes",
+    "creator": "Atreides",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 6503,
+    "frameFile": "school-vibes_1x3_3slots_6fae89.png",
+    "frameUrl": "/assets/jepreto-frames/strips/school-vibes_1x3_3slots_6fae89.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/school-vibes_1x3_3slots_6fae89.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1761646702650-JEPRETO.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 6,
+        "left": 4,
+        "width": 93,
+        "height": 24,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 37,
+        "left": 2,
+        "width": 95,
+        "height": 24,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 68,
+        "left": 2,
+        "width": 95,
+        "height": 25,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "c7c9706d-8c79-11f1-ba48-f6f4dece2b5d",
+    "shortId": "c7c970",
+    "name": "Spiderman 1",
+    "creator": "take apict",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 6168,
+    "frameFile": "spiderman-1_1x3_3slots_c7c970.png",
+    "frameUrl": "/assets/jepreto-frames/strips/spiderman-1_1x3_3slots_c7c970.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/spiderman-1_1x3_3slots_c7c970.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1785459009259-output-onlinepngtools__6_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 8.8,
+        "left": 3.1,
+        "width": 94.4,
+        "height": 24.3,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 34.2,
+        "left": 3.1,
+        "width": 94.4,
+        "height": 24.1,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 59.4,
+        "left": 3.1,
+        "width": 94.4,
+        "height": 24.3,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "911a2625-5e5f-11f0-8c06-82f9d1e92f26",
+    "shortId": "911a26",
+    "name": "Eccalipse - capoo",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 6092,
+    "frameFile": "eccalipse-capoo_1x3_3slots_911a26.png",
+    "frameUrl": "/assets/jepreto-frames/strips/eccalipse-capoo_1x3_3slots_911a26.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/eccalipse-capoo_1x3_3slots_911a26.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1752579493800-Kuromi_-_Eccalipse_1x3_final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 8.7,
+        "left": 4.3,
+        "width": 91.4,
+        "height": 21.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 35.8,
+        "left": 4.3,
+        "width": 91.4,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 61,
+        "left": 4.3,
+        "width": 91.4,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "beb4e8e3-8815-11f1-a867-4aafc47b4680",
+    "shortId": "beb4e8",
+    "name": "SNAP DAY",
+    "creator": "Irfan Syahputra",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 4,
+    "usedTimes": 6037,
+    "frameFile": "snap-day_2x3_4slots_beb4e8.png",
+    "frameUrl": "/assets/jepreto-frames/cards/snap-day_2x3_4slots_beb4e8.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/snap-day_2x3_4slots_beb4e8.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1784976239533-SNAPDAY.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 11.8,
+        "left": 2.5,
+        "width": 45.2,
+        "height": 16,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 29.4,
+        "left": 2.5,
+        "width": 45.2,
+        "height": 16.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 47,
+        "left": 2.5,
+        "width": 45.2,
+        "height": 16.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 64.6,
+        "left": 2.5,
+        "width": 45.2,
+        "height": 16.2,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "db27adfe-8974-11f0-bbca-82f9d1e92f26",
+    "shortId": "db27ad",
+    "name": "Snoopy 2x3",
+    "creator": "Jepreto",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 5730,
+    "frameFile": "snoopy-2x3_2x3_6slots_db27ad.png",
+    "frameUrl": "/assets/jepreto-frames/cards/snoopy-2x3_2x3_6slots_db27ad.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/snoopy-2x3_2x3_6slots_db27ad.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1756979542007-Snoopy_2x3_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 1,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 7,
+        "left": 51,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 32,
+        "left": 1,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 32,
+        "left": 51,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 57,
+        "left": 1,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 57,
+        "left": 51,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "6bd8702d-855a-11f0-bbca-82f9d1e92f26",
+    "shortId": "6bd870",
+    "name": "5th treasure2",
+    "creator": "Kokomelon",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 4,
+    "usedTimes": 5538,
+    "frameFile": "5th-treasure2_1x3_4slots_6bd870.png",
+    "frameUrl": "/assets/jepreto-frames/strips/5th-treasure2_1x3_4slots_6bd870.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/5th-treasure2_1x3_4slots_6bd870.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1756528383708-1756524055250.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 7,
+        "width": 82,
+        "height": 18,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 27,
+        "left": 7,
+        "width": 81,
+        "height": 17,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 46,
+        "left": 9,
+        "width": 81,
+        "height": 17,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 66,
+        "left": 10,
+        "width": 78,
+        "height": 17,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "18274ba4-2c00-11f1-9529-62a09b96abf0",
+    "shortId": "18274b",
+    "name": "bis furap furab💜",
+    "creator": "Honesty Mustika",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 2,
+    "usedTimes": 5498,
+    "frameFile": "bis-furap-furab_1x3_2slots_18274b.png",
+    "frameUrl": "/assets/jepreto-frames/strips/bis-furap-furab_1x3_2slots_18274b.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/bis-furap-furab_1x3_2slots_18274b.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1774851434122-jepreto_single__1_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 18.8,
+        "left": 4.7,
+        "width": 89.4,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 39.7,
+        "left": 5.3,
+        "width": 89.4,
+        "height": 19.1,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "32bf0440-fa7f-11f0-b0e8-62a09b96abf0",
+    "shortId": "32bf04",
+    "name": "tiket",
+    "creator": "Fotografi 24",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 4,
+    "usedTimes": 5455,
+    "frameFile": "tiket_1x3_4slots_32bf04.png",
+    "frameUrl": "/assets/jepreto-frames/strips/tiket_1x3_4slots_32bf04.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/tiket_1x3_4slots_32bf04.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1769408465259-TIKET.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 4,
+        "left": 4,
+        "width": 87,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 22,
+        "left": 5,
+        "width": 88,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 41,
+        "left": 6,
+        "width": 88,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 60,
+        "left": 7,
+        "width": 88,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "f5a600d2-3d44-11f1-9175-46c7ea1b536e",
+    "shortId": "f5a600",
+    "name": "TICKET",
+    "creator": "novananvariz",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 5446,
+    "frameFile": "ticket_2x3_6slots_f5a600.png",
+    "frameUrl": "/assets/jepreto-frames/cards/ticket_2x3_6slots_f5a600.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/ticket_2x3_6slots_f5a600.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1776750181258-tiket.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 27.6,
+        "left": 3.7,
+        "width": 42.5,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 47.7,
+        "left": 3.7,
+        "width": 42.5,
+        "height": 19.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 67.8,
+        "left": 3.7,
+        "width": 42.5,
+        "height": 19.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 27.6,
+        "left": 53.8,
+        "width": 42.5,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 47.7,
+        "left": 53.8,
+        "width": 42.5,
+        "height": 19.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 67.8,
+        "left": 53.8,
+        "width": 42.5,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "a52c4741-755b-11f1-9e39-6af2582b5e5d",
+    "shortId": "a52c47",
+    "name": "spongebob",
+    "creator": "dayanah sebayang",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 4,
+    "usedTimes": 5383,
+    "frameFile": "spongebob_2x3_4slots_a52c47.png",
+    "frameUrl": "/assets/jepreto-frames/cards/spongebob_2x3_4slots_a52c47.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/spongebob_2x3_4slots_a52c47.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1782917188313-Snapday_photobooth-27.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 0,
+        "left": 0,
+        "width": 51.6,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 19.4,
+        "left": 0,
+        "width": 51,
+        "height": 21.2,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 40.5,
+        "left": 0,
+        "width": 51,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 61.6,
+        "left": 0,
+        "width": 51,
+        "height": 21.2,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "19da6de9-c9b6-11f0-b49e-82f9d1e92f26",
+    "shortId": "19da6d",
+    "name": "TV RETRO Frame On Cayyy",
+    "creator": "Cayyy",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 5276,
+    "frameFile": "tv-retro-frame-on-cayyy_1x3_3slots_19da6d.png",
+    "frameUrl": "/assets/jepreto-frames/strips/tv-retro-frame-on-cayyy_1x3_3slots_19da6d.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/tv-retro-frame-on-cayyy_1x3_3slots_19da6d.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1764044438790-FRAMEONCAYYYTELEVISION__1_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 34,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 59,
+        "left": 2,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "a7fc85e4-842a-11f0-bbca-82f9d1e92f26",
+    "shortId": "a7fc85",
+    "name": "Spiderman 1x3",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 5214,
+    "frameFile": "spiderman-1x3_1x3_3slots_a7fc85.png",
+    "frameUrl": "/assets/jepreto-frames/strips/spiderman-1x3_1x3_3slots_a7fc85.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/spiderman-1x3_1x3_3slots_a7fc85.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1756397917623-Spiderman_1x3_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 32,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 57,
+        "left": 3,
+        "width": 95,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "ba94bf62-b4c0-11f1-9835-463f481d68ba",
+    "shortId": "ba94bf",
+    "name": "Safari Snapbooth Polkadot ",
+    "creator": "Safari Snapbooth",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 5072,
+    "frameFile": "safari-snapbooth-polkadot_2x3_6slots_ba94bf.png",
+    "frameUrl": "/assets/jepreto-frames/cards/safari-snapbooth-polkadot_2x3_6slots_ba94bf.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/safari-snapbooth-polkadot_2x3_6slots_ba94bf.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1789887527833-5.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 11.8,
+        "left": 2,
+        "width": 46.7,
+        "height": 19.9,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 35.4,
+        "left": 2.3,
+        "width": 46.7,
+        "height": 19.9,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 59,
+        "left": 1.8,
+        "width": 46.7,
+        "height": 19.9,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 11.8,
+        "left": 51.5,
+        "width": 45.7,
+        "height": 20.3,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 35.4,
+        "left": 51.6,
+        "width": 45.7,
+        "height": 20.3,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 59.4,
+        "left": 51.6,
+        "width": 45.7,
+        "height": 20.3,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "b2181dff-656d-11f0-8c06-82f9d1e92f26",
+    "shortId": "b2181d",
+    "name": "Frank Ocean 2x3",
+    "creator": "Jepreto",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 4958,
+    "frameFile": "frank-ocean-2x3_2x3_6slots_b2181d.png",
+    "frameUrl": "/assets/jepreto-frames/cards/frank-ocean-2x3_2x3_6slots_b2181d.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/frank-ocean-2x3_2x3_6slots_b2181d.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1753018224800-Blond_2x3_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 1,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 7,
+        "left": 51,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 32,
+        "left": 1,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 32,
+        "left": 51,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 56,
+        "left": 1,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 56,
+        "left": 51,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "b9d684a1-a678-11f0-85b3-82f9d1e92f26",
+    "shortId": "b9d684",
+    "name": "Perunggu - 33x 1x3",
+    "creator": "Jepreto",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 4947,
+    "frameFile": "perunggu-33x-1x3_1x3_3slots_b9d684.png",
+    "frameUrl": "/assets/jepreto-frames/strips/perunggu-33x-1x3_1x3_3slots_b9d684.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/perunggu-33x-1x3_1x3_3slots_b9d684.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1760169787664-33x_1x3_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 5,
+        "width": 91,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 32,
+        "left": 5,
+        "width": 91,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 57,
+        "left": 5,
+        "width": 91,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "2a1ea8fc-a38e-11f1-999e-2a753840f5ff",
+    "shortId": "2a1ea8",
+    "name": "Koran 1",
+    "creator": "andi syafri",
+    "ratio": "A4/A3",
+    "subfolder": "others",
+    "slotsCount": 2,
+    "usedTimes": 4893,
+    "frameFile": "koran-1_A4xA3_2slots_2a1ea8.png",
+    "frameUrl": "/assets/jepreto-frames/others/koran-1_A4xA3_2slots_2a1ea8.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/koran-1_A4xA3_2slots_2a1ea8.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1787996640510-1.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 26.6,
+        "left": 2.6,
+        "width": 94.1,
+        "height": 35,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 70.4,
+        "left": 31.4,
+        "width": 39.2,
+        "height": 17.6,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "6d11cd63-5c02-11f0-8c06-82f9d1e92f26",
+    "shortId": "6d11cd",
+    "name": "Billie Eilish 2x3",
+    "creator": "Jepreto",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 4864,
+    "frameFile": "billie-eilish-2x3_2x3_6slots_6d11cd.png",
+    "frameUrl": "/assets/jepreto-frames/cards/billie-eilish-2x3_2x3_6slots_6d11cd.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/billie-eilish-2x3_2x3_6slots_6d11cd.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1751982592376-Blues_FINAL.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7.3,
+        "left": 2.2,
+        "width": 45.8,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 34.4,
+        "left": 2.2,
+        "width": 45.8,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 61.2,
+        "left": 2.2,
+        "width": 45.8,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 7.3,
+        "left": 52,
+        "width": 45.8,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 34.4,
+        "left": 52,
+        "width": 45.8,
+        "height": 19.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 61.2,
+        "left": 52,
+        "width": 45.8,
+        "height": 19.4,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "fa312304-f5ce-11f0-b0e8-62a09b96abf0",
+    "shortId": "fa3123",
+    "name": "Frame perunggu x snap us",
+    "creator": "Snapus",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 4770,
+    "frameFile": "frame-perunggu-x-snap-us_1x3_3slots_fa3123.png",
+    "frameUrl": "/assets/jepreto-frames/strips/frame-perunggu-x-snap-us_1x3_3slots_fa3123.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/frame-perunggu-x-snap-us_1x3_3slots_fa3123.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1768892974342-Frame_10.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 9,
+        "left": 3,
+        "width": 95,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 30,
+        "left": 2,
+        "width": 95,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 50,
+        "left": 3,
+        "width": 95,
+        "height": 22,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "b93316dd-ac43-11f1-967b-56740713b5d9",
+    "shortId": "b93316",
+    "name": "snoopy",
+    "creator": "Ayyaawww",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 4735,
+    "frameFile": "snoopy_1x3_3slots_b93316.png",
+    "frameUrl": "/assets/jepreto-frames/strips/snoopy_1x3_3slots_b93316.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/snoopy_1x3_3slots_b93316.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1788954229168-Tambahkan_sedikit_teks_isi__2___1_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 46.6,
+        "left": 1.6,
+        "width": 81.1,
+        "height": 17.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 8.1,
+        "left": 3.9,
+        "width": 81.7,
+        "height": 17.8,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 27.4,
+        "left": 16.7,
+        "width": 81.7,
+        "height": 17.8,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "315c9dd7-c6a7-11f0-b49e-82f9d1e92f26",
+    "shortId": "315c9d",
+    "name": "About You!",
+    "creator": "Raina Azani",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 4730,
+    "frameFile": "about-you_1x3_3slots_315c9d.png",
+    "frameUrl": "/assets/jepreto-frames/strips/about-you_1x3_3slots_315c9d.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/about-you_1x3_3slots_315c9d.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1763708182295-AboutYou.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 10,
+        "left": 5,
+        "width": 89,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 34,
+        "left": 5,
+        "width": 89,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 58,
+        "left": 5,
+        "width": 89,
+        "height": 19,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "9c15ad68-edfd-11f0-b0e8-62a09b96abf0",
+    "shortId": "9c15ad",
+    "name": "VINTAGE NEWSPAPER FRAME",
+    "creator": "jepret cambox",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 2,
+    "usedTimes": 4715,
+    "frameFile": "vintage-newspaper-frame_2x3_2slots_9c15ad.png",
+    "frameUrl": "/assets/jepreto-frames/cards/vintage-newspaper-frame_2x3_2slots_9c15ad.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/vintage-newspaper-frame_2x3_2slots_9c15ad.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1768033393392-NEW_JEPRET_CAMBOX_3.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 41,
+        "left": 2,
+        "width": 63,
+        "height": 27,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 69,
+        "left": 42,
+        "width": 56,
+        "height": 24,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "0477f670-a679-11f0-85b3-82f9d1e92f26",
+    "shortId": "0477f6",
+    "name": "Perunggu - 33x 2x3",
+    "creator": "Jepreto",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 4707,
+    "frameFile": "perunggu-33x-2x3_2x3_6slots_0477f6.png",
+    "frameUrl": "/assets/jepreto-frames/cards/perunggu-33x-2x3_2x3_6slots_0477f6.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/perunggu-33x-2x3_2x3_6slots_0477f6.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1760169912997-33x_2x3_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 2,
+        "width": 48,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 7,
+        "left": 51,
+        "width": 48,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 31,
+        "left": 2,
+        "width": 48,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 32,
+        "left": 50,
+        "width": 48,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 57,
+        "left": 2,
+        "width": 48,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 56,
+        "left": 51,
+        "width": 48,
+        "height": 21,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "ad9c5033-6bab-11f1-9e39-6af2582b5e5d",
+    "shortId": "ad9c50",
+    "name": "SPONGEBOOB",
+    "creator": "Eterna",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 4,
+    "usedTimes": 4706,
+    "frameFile": "spongeboob_2x3_4slots_ad9c50.png",
+    "frameUrl": "/assets/jepreto-frames/cards/spongeboob_2x3_4slots_ad9c50.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/spongeboob_2x3_4slots_ad9c50.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1781852051877-8.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 1.8,
+        "left": 53.6,
+        "width": 44,
+        "height": 22.3,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 26.3,
+        "left": 2.8,
+        "width": 44,
+        "height": 22.3,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 50.4,
+        "left": 52.1,
+        "width": 44,
+        "height": 22.3,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 74.4,
+        "left": 3.3,
+        "width": 44,
+        "height": 22.3,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "0bc63a74-4175-11f1-9814-829f9b823469",
+    "shortId": "0bc63a",
+    "name": "Jepreto Kicau Mania",
+    "creator": "Jepreto",
+    "ratio": "A4/A3",
+    "subfolder": "others",
+    "slotsCount": 2,
+    "usedTimes": 4587,
+    "frameFile": "jepreto-kicau-mania_A4xA3_2slots_0bc63a.png",
+    "frameUrl": "/assets/jepreto-frames/others/jepreto-kicau-mania_A4xA3_2slots_0bc63a.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/jepreto-kicau-mania_A4xA3_2slots_0bc63a.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1777210638495-a3_newspaper_design-03.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 24.2,
+        "left": 2.2,
+        "width": 94,
+        "height": 43.1,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 67.3,
+        "left": 36.3,
+        "width": 59.5,
+        "height": 29.4,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "7a26ee5b-d11c-11f0-b49e-82f9d1e92f26",
+    "shortId": "7a26ee",
+    "name": "Meme 2",
+    "creator": "Sumie.here",
+    "ratio": "unknown",
+    "subfolder": "others",
+    "slotsCount": 4,
+    "usedTimes": 4577,
+    "frameFile": "meme-2_other_4slots_7a26ee.png",
+    "frameUrl": "/assets/jepreto-frames/others/meme-2_other_4slots_7a26ee.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/meme-2_other_4slots_7a26ee.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1764858066999-Photo.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 6,
+        "left": 5,
+        "width": 88,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 29,
+        "left": 4,
+        "width": 88,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 51,
+        "left": 8,
+        "width": 88,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 74,
+        "left": 6,
+        "width": 88,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "fa223012-6183-11f1-979b-72ac533f35e6",
+    "shortId": "fa2230",
+    "name": "Cute",
+    "creator": "Gloriva",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 4519,
+    "frameFile": "cute_1x3_3slots_fa2230.png",
+    "frameUrl": "/assets/jepreto-frames/strips/cute_1x3_3slots_fa2230.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/cute_1x3_3slots_fa2230.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1780735488464-FRAME_1_STRIP__1_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 8.1,
+        "left": 11.1,
+        "width": 80,
+        "height": 20.7,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 34.5,
+        "left": 9.6,
+        "width": 80,
+        "height": 20.7,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 62.1,
+        "left": 10,
+        "width": 80,
+        "height": 20.7,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "adcbb98f-88b0-11f1-a610-da8dc507fa14",
+    "shortId": "adcbb9",
+    "name": "Today's Dump",
+    "creator": "avanessa",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 4491,
+    "frameFile": "todays-dump_1x3_3slots_adcbb9.png",
+    "frameUrl": "/assets/jepreto-frames/strips/todays-dump_1x3_3slots_adcbb9.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/todays-dump_1x3_3slots_adcbb9.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1785042782249-Dump_Green_Pink_Png.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 26.4,
+        "left": 28.2,
+        "width": 43.5,
+        "height": 14.7,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 43.8,
+        "left": 28,
+        "width": 43.5,
+        "height": 14.7,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 61.6,
+        "left": 28.2,
+        "width": 43.5,
+        "height": 14.7,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "d64a1064-906d-11f0-85b3-82f9d1e92f26",
+    "shortId": "d64a10",
+    "name": "Pastel Ribbon",
+    "creator": "Eka Retno S",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 3,
+    "usedTimes": 4477,
+    "frameFile": "pastel-ribbon_1x3_3slots_d64a10.png",
+    "frameUrl": "/assets/jepreto-frames/strips/pastel-ribbon_1x3_3slots_d64a10.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/pastel-ribbon_1x3_3slots_d64a10.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1757746185474-Desain_tanpa_judul.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 14,
+        "left": 4,
+        "width": 93,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 35,
+        "left": 4,
+        "width": 93,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 57,
+        "left": 4,
+        "width": 93,
+        "height": 20,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "3d6ba29a-656e-11f0-8c06-82f9d1e92f26",
+    "shortId": "3d6ba2",
+    "name": "CAS - Pistols 2x3",
+    "creator": "Jepreto",
+    "ratio": "2:3",
+    "subfolder": "cards",
+    "slotsCount": 6,
+    "usedTimes": 4468,
+    "frameFile": "cas-pistols-2x3_2x3_6slots_3d6ba2.png",
+    "frameUrl": "/assets/jepreto-frames/cards/cas-pistols-2x3_2x3_6slots_3d6ba2.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/cas-pistols-2x3_2x3_6slots_3d6ba2.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1753018458494-Pistols_2x3_Final.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 1,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 7,
+        "left": 51,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 32,
+        "left": 1,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 32,
+        "left": 51,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 4,
+        "top": 57,
+        "left": 1,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 5,
+        "top": 57,
+        "left": 51,
+        "width": 48,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "c6ec0652-7158-11f1-9e39-6af2582b5e5d",
+    "shortId": "c6ec06",
+    "name": "Sion Cow",
+    "creator": "shafira",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 4,
+    "usedTimes": 4201,
+    "frameFile": "sion-cow_1x3_4slots_c6ec06.png",
+    "frameUrl": "/assets/jepreto-frames/strips/sion-cow_1x3_4slots_c6ec06.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/sion-cow_1x3_4slots_c6ec06.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1782476150539-Untitled_design__20___1_.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 1.2,
+        "left": 8.5,
+        "width": 84.7,
+        "height": 21.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 23.8,
+        "left": 4.2,
+        "width": 89.2,
+        "height": 20.7,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 44.9,
+        "left": 5.7,
+        "width": 84.7,
+        "height": 21.6,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 68.4,
+        "left": 8,
+        "width": 84.7,
+        "height": 21.1,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": "114bc10f-855d-11f0-bbca-82f9d1e92f26",
+    "shortId": "114bc1",
+    "name": "5th treasure3",
+    "creator": "Kokomelon",
+    "ratio": "1:3",
+    "subfolder": "strips",
+    "slotsCount": 4,
+    "usedTimes": 4027,
+    "frameFile": "5th-treasure3_1x3_4slots_114bc1.png",
+    "frameUrl": "/assets/jepreto-frames/strips/5th-treasure3_1x3_4slots_114bc1.png",
+    "thumbnailUrl": "/assets/jepreto-frames/thumbnails/5th-treasure3_1x3_4slots_114bc1.webp",
+    "sourceUrl": "https://jepreto-image.b-cdn.net/templates/1756529520217-1756525108619.png",
+    "positions": [
+      {
+        "index": 0,
+        "top": 7,
+        "left": 12,
+        "width": 75,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 1,
+        "top": 28,
+        "left": 12,
+        "width": 75,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 2,
+        "top": 46,
+        "left": 12,
+        "width": 75,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      },
+      {
+        "index": 3,
+        "top": 66,
+        "left": 12,
+        "width": 75,
+        "height": 30,
+        "type": "landscape",
+        "rotation": 0
+      }
+    ]
+  }
+]
