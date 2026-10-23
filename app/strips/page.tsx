@@ -176,19 +176,7 @@ export default function Page() {
               </a>
               <span className="lb-minimal-copy">&copy; 2026 ConstBooth. All rights reserved.</span>
             </div>
-            <div className="lb-minimal-links">
-              <a href="/about">About</a>
-              <a href="/privacy">Privacy</a>
-              <a href="/terms">Terms</a>
-              <a href="/contact">Contact</a>
-              <button
-                type="button"
-                className="footer-cookie-prefs lb-minimal-cookie-prefs"
-                id="footer-cookie-prefs"
-              >
-                Cookie Preferences
-              </button>
-            </div>
+            <div className="lb-minimal-links"><a href="/booth">Booth</a><a href="/studio">Studio</a></div>
           </div>
         </nav>
       </footer>
