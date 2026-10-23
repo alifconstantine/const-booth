@@ -284,15 +284,12 @@
     console.log('Selected template:', tmpl.name, tmpl);
 
     try {
-      var isCard = (tmpl.ratio === '2:3');
-      var outMode = isCard ? 'card' : 'strip';
-      localStorage.setItem('outputMode', outMode);
-      if (isCard) {
-        localStorage.setItem('cardLayout', 'classic');
-      } else {
-        localStorage.removeItem('cardLayout');
-      }
+      // All templates from /strips (both 1:3 vertical strips and 2:3 cards / A4 / etc)
+      // are captured and composited via the core booth camera engine (camera.min.js)
+      localStorage.setItem('outputMode', 'strip');
+      localStorage.removeItem('cardLayout');
 
+      // Clear any previous capture/output leftovers so camera always opens fresh
       sessionStorage.setItem('lb_strip_locked', '1');
       sessionStorage.removeItem('lb_pending_strip');
       sessionStorage.removeItem('lb_ic_photos');

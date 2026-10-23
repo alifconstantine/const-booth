@@ -33,3 +33,25 @@ body.has-announcement {
   padding-top: 0 !important;
   margin-top: 0 !important;
 }
+
+/* Global Mobile Smoothness & Polish */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Remove profile buttons from all headers */
+.nav-login-btn,
+.mobile-login-btn,
+a[href="/profile"],
+a[href*="/profile"] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Touch-action and tap highlights */
+button, a, [role="button"] {
+  -webkit-tap-highlight-color: transparent;
+}

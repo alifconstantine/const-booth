@@ -293,6 +293,11 @@
   margin-bottom: 28px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.ts-category-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .ts-cat-btn {
@@ -306,11 +311,16 @@
   cursor: pointer;
   white-space: nowrap;
   transition: all 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .ts-cat-btn:hover {
   background: #f4f4f0;
   transform: translateY(-1px);
+}
+
+.ts-cat-btn:active {
+  transform: scale(0.96);
 }
 
 .ts-cat-btn.active {
@@ -368,12 +378,18 @@
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
   box-shadow: 4px 4px 0 #000000;
   overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .ts-card:hover {
   transform: translate(-2px, -2px);
   box-shadow: 6px 6px 0 #000000;
   border-color: #000000;
+}
+
+.ts-card:active {
+  transform: scale(0.98);
+  box-shadow: 2px 2px 0 #000000;
 }
 
 /* Card Header Badges */

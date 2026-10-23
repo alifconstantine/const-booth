@@ -102,3 +102,63 @@
 .output-right .section {
   margin-bottom: 8px !important;
 }
+
+/* ============================================================
+   ENHANCED OUTPUT PREVIEW SIZING (2:3 Cards & Photo Strips)
+   ============================================================ */
+.output-container {
+  max-width: 1200px !important;
+  gap: 48px !important;
+}
+
+/* Card Mode Preview (2:3 Photocard / Postcard) */
+.is-card-preview .machine-stack {
+  width: var(--stack-w, 400px) !important;
+  min-height: auto !important;
+  max-width: calc(100vw - 32px) !important;
+}
+
+.is-card-preview .mask-viewport {
+  width: var(--mask-w, 340px) !important;
+  max-width: calc(100% - 24px) !important;
+}
+
+.is-card-preview #preview-img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 767px) {
+  .output-container {
+    padding: calc(var(--header-height-mobile, 64px) + 16px) 16px 120px 16px !important;
+    gap: 20px !important;
+  }
+  
+  .output-left {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+  
+  .is-card-preview .machine-stack {
+    width: var(--stack-w, 310px) !important;
+    max-width: min(88vw, 340px) !important;
+  }
+  
+  .is-card-preview .mask-viewport {
+    width: var(--mask-w, 260px) !important;
+    max-width: min(80vw, 300px) !important;
+  }
+
+  .strip-collapse-wrap {
+    overflow: visible !important;
+  }
+
+  /* Shutter and controls touch targets on mobile */
+  #capture-btn, .capture-btn, .btn-main {
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+}
