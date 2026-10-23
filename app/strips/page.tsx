@@ -105,7 +105,7 @@ export default function Page() {
 
       {/* Main Template Selection Application Shell */}
       <main>
-        <div id="template-selection-app" className="ts-page-wrap">
+        <div id="template-selection-app" className="ts-page-wrap" suppressHydrationWarning>
           <div style={{ textAlign: 'center', padding: '60px 20px', color: '#6b7280' }}>
             <div
               style={{

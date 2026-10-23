@@ -204,10 +204,8 @@
       html += '<main class="ts-grid" id="main-content">';
       paged.forEach(function (tmpl) {
         var imgUrl = tmpl.thumbnailUrl || tmpl.frameUrl;
-        var ratioLabel = tmpl.ratio === '2:3' ? 'Card 2:3' : (tmpl.ratio === '1:3' ? 'Strip 1:3' : (tmpl.ratio || '1:3'));
         html += '<article class="ts-card" data-tmpl-id="' + tmpl.id + '" tabindex="0" role="button" aria-label="Select template ' + tmpl.name + '">';
         html += '  <div class="ts-card-badges">';
-        html += '    <span class="ts-badge-free">✨ Free</span>';
         html += '    <span class="ts-badge-slots">' + tmpl.slotsCount + ' photos</span>';
         html += '  </div>';
 
@@ -221,14 +219,10 @@
         html += '    </div>';
         html += '  </div>';
 
-        html += '  <footer class="ts-card-footer">';
-        html += '    <div class="ts-card-meta-row">';
-        html += '      <span class="ts-badge-ratio">' + ratioLabel + '</span>';
-        html += '      <span class="ts-badge-slots-subtle">' + tmpl.slotsCount + ' Photos</span>';
-        html += '    </div>';
+        html += '  <div class="ts-card-footer">';
         html += '    <h3 class="ts-card-title" title="' + tmpl.name + '">' + tmpl.name + '</h3>';
         html += '    <p class="ts-card-author">by ' + tmpl.creator + '</p>';
-        html += '  </footer>';
+        html += '  </div>';
         html += '</article>';
       });
       html += '</main>';
