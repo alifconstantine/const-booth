@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useId } from 'react';
 
 interface ClientPageRendererProps {
   html: string;
@@ -16,6 +16,12 @@ export default function ClientPageRenderer({
   bodyAttrs = {}
 }: ClientPageRendererProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const executedHtmlRef = useRef<string | null>(null);
+  const injectedScriptsRef = useRef<HTMLScriptElement[]>([]);
+  const instanceId = useId();
+
+  // Stable string representation of bodyAttrs to prevent dependency churn
+  const bodyAttrsKey = JSON.stringify(bodyAttrs);
 
   useEffect(() => {
     // Apply body class
@@ -31,17 +37,14 @@ export default function ClientPageRenderer({
 
     // Apply body attributes
     const originalAttrs: Record<string, string | null> = {};
-    Object.entries(bodyAttrs).forEach(([k, v]) => {
-      originalAttrs[k] = document.body.getAttribute(k);
-      document.body.setAttribute(k, v);
-    });
+    if (bodyAttrs && typeof bodyAttrs === 'object') {
+      Object.entries(bodyAttrs).forEach(([k, v]) => {
+        originalAttrs[k] = document.body.getAttribute(k);
+        document.body.setAttribute(k, v);
+      });
+    }
 
-    // Make sure body is visible
-    document.body.style.opacity = '1';
-
-    let isCancelled = false;
-
-    // Safety watchdog: never allow global loader to stay stuck for more than 2.5 seconds
+    // Safety watchdog: ensure global loader is hidden
     const safetyLoaderTimer = setTimeout(() => {
       try {
         if (typeof (window as any).hideLoader === 'function') {
@@ -52,10 +55,21 @@ export default function ClientPageRenderer({
           loader.classList.remove('visible');
         }
       } catch (_e) {}
-    }, 2500);
+    }, 1500);
 
-    // Execute scripts found within the rendered HTML
-    if (containerRef.current) {
+    // Only execute scripts if this HTML has not already had its scripts executed
+    if (containerRef.current && executedHtmlRef.current !== html) {
+      executedHtmlRef.current = html;
+
+      // Clean up previous injected scripts if any
+      injectedScriptsRef.current.forEach((s) => {
+        try {
+          if (s.parentNode) s.parentNode.removeChild(s);
+        } catch (_e) {}
+      });
+      injectedScriptsRef.current = [];
+
+      let isCancelled = false;
       const scriptElements = Array.from(containerRef.current.querySelectorAll('script'));
 
       async function executeScripts() {
@@ -65,10 +79,16 @@ export default function ClientPageRenderer({
           // Skip JSON-LD scripts
           if (oldScript.type === 'application/ld+json') continue;
 
+          // Avoid loading duplicate scripts if already present globally (e.g. header.min.js)
+          if (oldScript.src && oldScript.src.includes('/shared/header.min.js')) {
+            continue;
+          }
+
           await new Promise<void>((resolve) => {
             const newScript = document.createElement('script');
+            newScript.setAttribute('data-client-renderer', instanceId);
 
-            // Copy attributes
+            // Copy attributes except async/defer
             Array.from(oldScript.attributes).forEach((attr) => {
               if (attr.name !== 'src' && attr.name !== 'async' && attr.name !== 'defer') {
                 newScript.setAttribute(attr.name, attr.value);
@@ -80,20 +100,21 @@ export default function ClientPageRenderer({
               newScript.async = false;
               newScript.onload = () => resolve();
               newScript.onerror = () => resolve();
-              oldScript.parentNode?.replaceChild(newScript, oldScript);
+              document.body.appendChild(newScript);
+              injectedScriptsRef.current.push(newScript);
             } else {
               newScript.textContent = oldScript.textContent;
-              oldScript.parentNode?.replaceChild(newScript, oldScript);
+              document.body.appendChild(newScript);
+              injectedScriptsRef.current.push(newScript);
               resolve();
             }
           });
         }
 
         if (!isCancelled) {
-          // Trigger initialization events
+          // Trigger initialization events cleanly without global window 'load' loop
           setTimeout(() => {
             document.dispatchEvent(new Event('DOMContentLoaded'));
-            window.dispatchEvent(new Event('load'));
 
             if (typeof (window as any).__lbCenterStrips === 'function') {
               (window as any).__lbCenterStrips(true);
@@ -109,7 +130,6 @@ export default function ClientPageRenderer({
     }
 
     return () => {
-      isCancelled = true;
       clearTimeout(safetyLoaderTimer);
       addedClasses.forEach((cls) => document.body.classList.remove(cls));
       Object.entries(originalAttrs).forEach(([k, orig]) => {
@@ -120,7 +140,19 @@ export default function ClientPageRenderer({
         }
       });
     };
-  }, [html, bodyClass, bodyAttrs]);
+  }, [html, bodyClass, bodyAttrsKey, instanceId]);
+
+  // Clean up injected scripts on component unmount
+  useEffect(() => {
+    return () => {
+      injectedScriptsRef.current.forEach((s) => {
+        try {
+          if (s.parentNode) s.parentNode.removeChild(s);
+        } catch (_e) {}
+      });
+      injectedScriptsRef.current = [];
+    };
+  }, []);
 
   return (
     <>
@@ -129,6 +161,7 @@ export default function ClientPageRenderer({
       ))}
       <div
         ref={containerRef}
+        suppressHydrationWarning
         dangerouslySetInnerHTML={{ __html: html }}
         style={{ display: 'contents' }}
       />

@@ -39,3 +39,6 @@ next-env.d.ts
 !/public/uploads/.gitkeep
 
 /scratch/
+/data/
+/.chrome-debug-profile/
+
