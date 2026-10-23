@@ -2,6 +2,20 @@ import { createServer } from 'http';
 import { parse } from 'url';
 import next from 'next';
 import { WebSocketServer } from 'ws';
+import os from 'os';
+
+function getNetworkAddresses() {
+  const interfaces = os.networkInterfaces();
+  const addresses = [];
+  for (const name of Object.keys(interfaces)) {
+    for (const iface of interfaces[name]) {
+      if (iface.family === 'IPv4' && !iface.internal) {
+        addresses.push({ name, address: iface.address });
+      }
+    }
+  }
+  return addresses;
+}
 
 const dev = process.env.NODE_ENV !== 'production';
 const hostname = '0.0.0.0';
@@ -227,6 +241,22 @@ app.prepare().then(() => {
   });
 
   server.listen(port, hostname, () => {
-    console.log(`> Ready on http://${hostname}:${port} (Next.js + WebSockets active)`);
+    const netList = getNetworkAddresses();
+    console.log('\n' + '='.repeat(60));
+    console.log('📸 ConstBooth Server Siap Digunakan!');
+    console.log(`- Local (Laptop)  : http://localhost:${port}`);
+    if (netList.length > 0) {
+      netList.forEach(n => {
+        console.log(`- Network (HP/LAN): http://${n.address}:${port} (${n.name})`);
+      });
+    } else {
+      console.log(`- Network (HP/LAN): http://<IP_LAPTOP>:${port}`);
+    }
+    console.log('\n📱 Untuk Photobooth Berdua / Akses dari HP:');
+    console.log('1. Hubungkan HP ke Wi-Fi / Hotspot yang sama dengan laptop.');
+    console.log('2. Buka URL Network di atas pada browser HP.');
+    console.log('3. Ingin kamera HP langsung aktif via HTTPS gratis tanpa repot?');
+    console.log('   Jalankan perintah: npm run share');
+    console.log('='.repeat(60) + '\n');
   });
 });
