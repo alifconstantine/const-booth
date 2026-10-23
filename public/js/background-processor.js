@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  if (window.LensBoothBackgroundProcessor) return;
+  if (window.LensBoothBackgroundProcessor || window.ConstBoothBackgroundProcessor) return;
 
   const CONFIG = {
     modelPathLocal: "/models/selfie_segmenter.tflite",
@@ -2303,6 +2303,7 @@
   };
 
   window.LensBoothBackgroundProcessor = BackgroundProcessor;
+  window.ConstBoothBackgroundProcessor = BackgroundProcessor;
 
   function initAutoAttach() {
     const v = document.getElementById("main-video");
