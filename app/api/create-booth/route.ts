@@ -26,9 +26,8 @@ export async function POST(req: Request) {
 
   if (convex) {
     try {
-      await convex.mutation(api.booths.joinBooth, {
+      await convex.mutation(api.booths.createBooth, {
         boothId,
-        clientId: 'system_creator_' + Math.random().toString(36).substring(2, 8),
         outputMode,
       });
     } catch (_e) {}

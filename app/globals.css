@@ -55,3 +55,41 @@ a[href*="/profile"] {
 button, a, [role="button"] {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* Header Share Button in Shared Booth */
+.mobile-share-btn {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: var(--primary, #F12850) !important;
+  color: #fff !important;
+  border: 1.5px solid #000 !important;
+  font-family: var(--font-main, sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  cursor: pointer;
+  z-index: 1012;
+  box-shadow: 2px 2px 0 #000;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.mobile-share-btn:active {
+  transform: translateY(-50%) scale(0.96);
+}
+.mobile-share-btn svg {
+  flex-shrink: 0;
+}
+.mobile-share-btn.copied {
+  background: #16a34a !important;
+  border-color: #000 !important;
+}
+body:not(.shared-layout) .mobile-share-btn {
+  display: none !important;
+}

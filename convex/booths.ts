@@ -15,6 +15,33 @@ export const getBooth = query({
   },
 });
 
+export const createBooth = mutation({
+  args: {
+    boothId: v.string(),
+    outputMode: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const normId = args.boothId.toUpperCase().trim();
+    const now = Date.now();
+    const existing = await ctx.db
+      .query("booths")
+      .withIndex("by_boothId", (q) => q.eq("boothId", normId))
+      .first();
+
+    if (!existing) {
+      await ctx.db.insert("booths", {
+        boothId: normId,
+        hostClientId: "", // Unclaimed, will be claimed by first real visitor
+        status: "waiting",
+        outputMode: args.outputMode || "strip",
+        updatedAt: now,
+        expiresAt: now + BOOTH_TTL_MS,
+      });
+    }
+    return { boothId: normId };
+  },
+});
+
 export const joinBooth = mutation({
   args: {
     boothId: v.string(),
@@ -49,9 +76,24 @@ export const joinBooth = mutation({
       };
     }
 
-    // Booth already exists
+    // If booth was created without a host or host was empty/system_creator, claim it as Host!
+    if (!booth.hostClientId || booth.hostClientId === "" || booth.hostClientId.startsWith("system_creator")) {
+      await ctx.db.patch(booth._id, {
+        hostClientId: args.clientId,
+        status: "waiting",
+        updatedAt: now,
+      });
+      return {
+        role: "host",
+        isInitiator: true,
+        peers: [],
+        status: "waiting",
+        boothId: normId,
+      };
+    }
+
+    // Host reconnecting
     if (booth.hostClientId === args.clientId) {
-      // Host reconnecting
       const peers = booth.guestClientId ? [booth.guestClientId] : [];
       return {
         role: "host",
