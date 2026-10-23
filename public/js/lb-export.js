@@ -241,7 +241,7 @@
 
     var mime = (blob && blob.type) || "image/jpeg";
     var name =
-      p.filename || "lensbooth-" + Date.now() + "." + extensionFor(mime);
+      p.filename || "constbooth-" + Date.now() + "." + extensionFor(mime);
 
     return {
       blob: blob,

@@ -970,7 +970,7 @@
       payload = {
         blob: blob,
         dataUrl: isData ? src : null,
-        filename: "lensbooth-strip-" + Date.now() + ".jpg",
+        filename: "constbooth-strip-" + Date.now() + ".jpg",
         title: "My ConstBooth Strip!",
         text: "Check out my photobooth strip from ConstBooth!",
         label: "photo strip",

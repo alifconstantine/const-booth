@@ -46,5 +46,4 @@ Allow: /
 
 User-agent: Bytespider
 Allow: /
-
-Sitemap: https://lensbooth.app/sitemap.xml
+# Sitemap: /sitemap.xml

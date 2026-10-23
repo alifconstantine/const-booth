@@ -65,7 +65,7 @@
     reportFailed: 'That report didn’t send. Try again.',
     reportOffline: 'You’re offline. Reconnect to send your report.',
     copied: 'Link copied.',
-    copyFailed: 'Couldn’t copy the link. Share lensbooth.app/studio/radio instead.',
+    copyFailed: 'Couldn’t copy the link. Please copy the URL directly.',
     unsupportedLanguage: 'We can\u2019t safely review this language yet. Please try English, Spanish, French, German, Hindi, Italian, Portuguese, or Thai.'
   };
 
@@ -1358,7 +1358,7 @@
 
   function share() {
     var url = window.location.origin + '/studio/radio';
-    var text = 'I just heard a stranger on LensBooth Radio.\nTune in and hear one too.';
+    var text = 'I just heard a stranger on ConstBooth Radio.\nTune in and hear one too.';
     var full = text + '\n' + url;
     track('radio_shared');
     function copy() {
@@ -1370,7 +1370,7 @@
       }
     }
     if (navigator.share) {
-      navigator.share({ title: 'LensBooth Radio', text: text, url: url }).catch(function (err) {
+      navigator.share({ title: 'ConstBooth Radio', text: text, url: url }).catch(function (err) {
         if (err && err.name === 'AbortError') return;
         copy();
       });

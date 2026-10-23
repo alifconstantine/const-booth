@@ -204,7 +204,7 @@
       ctx.save();
       ctx.globalAlpha = alpha;
       ctx.font = '700 26px Satoshi, -apple-system, "Segoe UI", sans-serif';
-      var text = 'lensbooth.app';
+      var text = 'constbooth';
       var w = ctx.measureText(text).width + 44;
       var h = WATERMARK_H;
       var x = (VIDEO_W - w) / 2;
@@ -678,7 +678,7 @@
   }
 
   function save(result, title) {
-    var filename = 'lensbooth-cassette.' + result.extension;
+    var filename = 'constbooth-cassette.' + result.extension;
     var file = null;
     try {
       file = new File([result.blob], filename, { type: result.mime });

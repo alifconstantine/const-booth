@@ -1,12 +1,36 @@
 import { NextResponse } from 'next/server';
 import { getTempImage } from '../../temp-store';
+import { ConvexHttpClient } from 'convex/browser';
+import { api } from '@/convex/_generated/api';
+
+const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL;
+const convex = convexUrl ? new ConvexHttpClient(convexUrl) : null;
 
 export async function GET(
   request: Request,
   { params }: { params: Promise<{ id: string }> }
 ) {
   const { id } = await params;
-  const item = getTempImage(id);
+  let item = getTempImage(id);
+
+  if (!item && convex) {
+    try {
+      const storageUrl = await convex.query(api.booths.getTempImageUrl, { imageId: id });
+      if (storageUrl) {
+        const fetchRes = await fetch(storageUrl);
+        if (fetchRes.ok) {
+          const arrayBuffer = await fetchRes.arrayBuffer();
+          const contentType = fetchRes.headers.get('content-type') || 'image/png';
+          item = {
+            buffer: Buffer.from(arrayBuffer),
+            contentType,
+            expiresAt: Date.now() + 60000
+          };
+        }
+      }
+    } catch (_e) {}
+  }
+
   if (!item) {
     return new NextResponse('Image not found or expired', { status: 404 });
   }

@@ -39,7 +39,7 @@ export default function LetterViewerPage() {
   const downloadPage = (dataUrl: string, index: number) => {
     const a = document.createElement('a');
     a.href = dataUrl;
-    a.download = `lensbooth-letter-p${index + 1}.jpg`;
+    a.download = `constbooth-letter-p${index + 1}.jpg`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);

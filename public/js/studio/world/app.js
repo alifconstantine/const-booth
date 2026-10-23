@@ -317,8 +317,8 @@ function showJoin(city, rejoin, st) {
   $('wd-join-text').textContent = rejoin
     ? 'Pick up where you left off. If your friend is still there, you’ll see them.'
     : group
-      ? 'Your friends are exploring ' + name + '. Join the group, find the LensBooths together and take strips side by side.'
-      : 'Your friend is waiting in ' + name + '. Find the LensBooths together and take a strip side by side.';
+      ? 'Your friends are exploring ' + name + '. Join the group, find the ConstBooths together and take strips side by side.'
+      : 'Your friend is waiting in ' + name + '. Find the ConstBooths together and take a strip side by side.';
   if (group && !rejoin) $('wd-join-title').textContent = 'You’re invited to a group in ' + name;
   $('wd-join-label').textContent = rejoin ? 'Go back in' : group ? 'Join the group' : 'Join your friend';
   var nameInput = $('wd-join-name');

@@ -2,11 +2,16 @@ import { Metadata } from 'next';
 import ClientPageRenderer from '@/app/components/ClientPageRenderer';
 import pageData from './pageData.json';
 import { getBoothState } from '../api/temp-store';
+import { ConvexHttpClient } from 'convex/browser';
+import { api } from '@/convex/_generated/api';
 
 export const metadata: Metadata = {
   title: pageData.title,
   description: pageData.description,
 };
+
+const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL;
+const convex = convexUrl ? new ConvexHttpClient(convexUrl) : null;
 
 export default async function Page({
   searchParams,
@@ -15,7 +20,13 @@ export default async function Page({
 }) {
   const resolvedParams = searchParams ? await searchParams : {};
   const boothId = resolvedParams?.booth;
-  const boothState = boothId ? getBoothState(boothId) : null;
+  let boothState: any = boothId ? getBoothState(boothId) : null;
+
+  if (!boothState && boothId && convex) {
+    try {
+      boothState = await convex.query(api.booths.getBooth, { boothId });
+    } catch (_e) {}
+  }
 
   return (
     <>

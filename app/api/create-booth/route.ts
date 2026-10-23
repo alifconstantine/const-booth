@@ -1,5 +1,10 @@
 import { NextResponse } from 'next/server';
 import { saveBoothState } from '../temp-store';
+import { ConvexHttpClient } from 'convex/browser';
+import { api } from '@/convex/_generated/api';
+
+const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL;
+const convex = convexUrl ? new ConvexHttpClient(convexUrl) : null;
 
 export async function POST(req: Request) {
   let outputMode = 'strip';
@@ -18,6 +23,16 @@ export async function POST(req: Request) {
   }
 
   saveBoothState(boothId, { outputMode });
+
+  if (convex) {
+    try {
+      await convex.mutation(api.booths.joinBooth, {
+        boothId,
+        clientId: 'system_creator_' + Math.random().toString(36).substring(2, 8),
+        outputMode,
+      });
+    } catch (_e) {}
+  }
 
   return NextResponse.json({ boothId, exists: true, outputMode });
 }

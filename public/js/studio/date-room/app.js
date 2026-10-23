@@ -460,7 +460,7 @@ function startInvitePoll(token) {
         partnerWasHere = true;
         if (banner) banner.hidden = false;
         setLabel(btn, 'Start building together');
-        document.title = 'Your person is here - LensBooth';
+        document.title = 'Your person is here - ConstBooth';
       }
     });
   }, 3500);

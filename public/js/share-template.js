@@ -502,13 +502,13 @@
   async function executeShareAction(action) {
     try {
       var item = await getRenderedData(currentFormat);
-      var filename = (currentMeta.filePrefix || "lensbooth") + "-" + currentFormat.replace(":", "-") + "-" + Date.now() + ".png";
+      var filename = (currentMeta.filePrefix || "constbooth") + "-" + currentFormat.replace(":", "-") + "-" + Date.now() + ".png";
       var exportPayload = {
         blob: item.blob,
         dataUrl: item.dataUrl,
         filename: filename,
         title: currentMeta.title || "ConstBooth Strip",
-        text: currentMeta.text || "Snapped on ConstBooth ✦ lensbooth.app"
+        text: currentMeta.text || "Snapped on ConstBooth"
       };
 
       if (action === "share") {

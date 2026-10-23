@@ -4013,7 +4013,7 @@
   {
     "id": "18274ba4-2c00-11f1-9529-62a09b96abf0",
     "shortId": "18274b",
-    "name": "bis furap furab💜",
+    "name": "bis furap furab\ud83d\udc9c",
     "creator": "Honesty Mustika",
     "ratio": "1:3",
     "subfolder": "strips",
@@ -5524,50 +5524,6 @@
     "thumbnailUrl": "/assets/strips/lucky-clover-preview.webp",
     "isOriginal": true,
     "originalKey": "lucky_clover",
-    "positions": [
-      {
-        "index": 0,
-        "top": 10,
-        "left": 10,
-        "width": 80,
-        "height": 25,
-        "type": "landscape",
-        "rotation": 0
-      },
-      {
-        "index": 1,
-        "top": 40,
-        "left": 10,
-        "width": 80,
-        "height": 25,
-        "type": "landscape",
-        "rotation": 0
-      },
-      {
-        "index": 2,
-        "top": 70,
-        "left": 10,
-        "width": 80,
-        "height": 25,
-        "type": "landscape",
-        "rotation": 0
-      }
-    ]
-  },
-  {
-    "id": "orig_lensbooth_classic",
-    "shortId": "lensbooth_classic",
-    "name": "ConstBooth Classic",
-    "creator": "ConstBooth Original",
-    "ratio": "1:3",
-    "subfolder": "original",
-    "slotsCount": 3,
-    "usedTimes": 44000,
-    "frameFile": "lensbooth-classic-preview.webp",
-    "frameUrl": "/assets/strips/lensbooth-classic-preview.webp",
-    "thumbnailUrl": "/assets/strips/lensbooth-classic-preview.webp",
-    "isOriginal": true,
-    "originalKey": "lensbooth_classic",
     "positions": [
       {
         "index": 0,

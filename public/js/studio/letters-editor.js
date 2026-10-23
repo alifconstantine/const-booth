@@ -1404,7 +1404,7 @@
         busy(false);
         return window.LBExport.save({
           blob: blob,
-          filename: 'lensbooth-letter.png',
+          filename: 'constbooth-letter.png',
           title: 'My ConstBooth letter',
           text: 'A letter I made on ConstBooth',
           label: 'letter'
@@ -1434,7 +1434,7 @@
         busy(false);
         return window.LBExport.save({
           blob: blob,
-          filename: 'lensbooth-letter.pdf',
+          filename: 'constbooth-letter.pdf',
           title: 'My ConstBooth letter',
           label: 'letter-pdf'
         });

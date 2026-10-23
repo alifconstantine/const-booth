@@ -64,17 +64,27 @@
     try {
       return new TextEncoder().encode(str).byteLength;
     } catch (_e) {
-
       return str.length * 3;
     }
   }
 
-  function wsEndpoint(boothId) {
+  function getOrGenerateClientId() {
     var clientId = '';
     try {
       clientId = localStorage.getItem('lb_client_id') || '';
     } catch (_e) {}
-    var extra = clientId ? '&clientId=' + encodeURIComponent(clientId) : '';
+    if (!clientId || clientId.length < 4) {
+      clientId = 'c_' + Math.random().toString(36).substring(2, 10);
+      try {
+        localStorage.setItem('lb_client_id', clientId);
+      } catch (_e) {}
+    }
+    return clientId;
+  }
+
+  function wsEndpoint(boothId) {
+    var clientId = getOrGenerateClientId();
+    var extra = '&clientId=' + encodeURIComponent(clientId);
 
     var base = window.LB_WS_URL || '';
     if (base) {
@@ -117,9 +127,7 @@
     for (var i = 0; i < snapshot.length; i++) {
       try {
         snapshot[i](payload);
-      } catch (_e) {
-
-      }
+      } catch (_e) {}
     }
   };
 
@@ -128,6 +136,12 @@
 
     this._boothIdProvider = boothIdProvider;
     this._ws = null;
+    this._convex = null;
+    this._unsubSignals = null;
+    this._unsubBooth = null;
+    this._processedSignals = Object.create(null);
+    this._lastTemplateSyncId = null;
+
     this._attempts = 0;
     this._reconnectTimer = null;
     this._closedByUs = false;
@@ -135,7 +149,7 @@
     this._sendCount = 0;
 
     this.connected = false;
-    this.id = null;
+    this.id = getOrGenerateClientId();
 
     this.io = new Emitter();
 
@@ -155,16 +169,111 @@
   };
 
   LBSocket.prototype._open = function () {
+    var boothId = this._currentBoothId();
+    if (!boothId) {
+      this.dispatch('connect_error', new Error('invalid_booth_id'));
+      return;
+    }
+
+    var convexUrl = window.CONVEX_URL || (window.LB_CONFIG && window.LB_CONFIG.convexUrl) || '';
+    if (window.ConvexClient && window.convexApi && convexUrl) {
+      this._openConvex(boothId, convexUrl);
+      return;
+    }
+
+    this._openWebSocket(boothId);
+  };
+
+  LBSocket.prototype._openConvex = function (boothId, convexUrl) {
+    var self = this;
+    if (!this._convex) {
+      try {
+        this._convex = new window.ConvexClient(convexUrl);
+      } catch (err) {
+        console.warn('[LB-Convex] Failed to init ConvexClient, falling back to WS:', err);
+        this._openWebSocket(boothId);
+        return;
+      }
+    }
+
+    var convex = this._convex;
+    var api = window.convexApi;
+    var clientId = this.id;
+    var outputMode = 'strip';
+    try {
+      outputMode = localStorage.getItem('outputMode') || 'strip';
+    } catch (_e) {}
+
+    convex.mutation(api.booths.joinBooth, {
+      boothId: boothId,
+      clientId: clientId,
+      outputMode: outputMode
+    }).then(function (res) {
+      if (self._closedByUs) return;
+      if (res && res.full) {
+        self.dispatch('booth-full', { boothId: boothId });
+        return;
+      }
+
+      self.connected = true;
+      self._attempts = 0;
+      self.dispatch('connect');
+      self.dispatch('connected', { socketId: clientId });
+      self.dispatch('booth-joined', {
+        isInitiator: !!(res && res.isInitiator),
+        peers: (res && res.peers) || []
+      });
+
+      // Subscribe to signals in realtime
+      if (self._unsubSignals) self._unsubSignals();
+      var since = Date.now() - 3000;
+      self._unsubSignals = convex.onUpdate(api.booths.getSignals, { boothId: boothId, since: since }, function (signals) {
+        if (!Array.isArray(signals)) return;
+        for (var i = 0; i < signals.length; i++) {
+          var sig = signals[i];
+          if (!sig || self._processedSignals[sig._id]) continue;
+          self._processedSignals[sig._id] = true;
+
+          // Skip own signals
+          if (sig.fromClientId === clientId) continue;
+
+          // If directed to a specific client and not us, skip
+          if (sig.toClientId && sig.toClientId !== clientId) continue;
+
+          var type = sig.type;
+          var data = sig.data || {};
+
+          if (type === 'signal') {
+            self.dispatch('signal', { from: sig.fromClientId, signal: data });
+          } else {
+            self.dispatch(type, data);
+          }
+        }
+      });
+
+      // Subscribe to booth document for template & state sync
+      if (self._unsubBooth) self._unsubBooth();
+      self._unsubBooth = convex.onUpdate(api.booths.getBooth, { boothId: boothId }, function (booth) {
+        if (!booth) return;
+        if (booth.template) {
+          var tId = booth.template.id || booth.template.name;
+          if (tId && tId !== self._lastTemplateSyncId) {
+            self._lastTemplateSyncId = tId;
+            self.dispatch('on-template-sync', { template: booth.template });
+          }
+        }
+      });
+    }).catch(function (err) {
+      console.error('[LB-Convex] joinBooth error:', err);
+      self.dispatch('connect_error', err);
+      self._scheduleReconnect();
+    });
+  };
+
+  LBSocket.prototype._openWebSocket = function (boothId) {
     if (this._ws) {
       var state = this._ws.readyState;
       if (state === 0 || state === 1) return;
-    }
-
-    var boothId = this._currentBoothId();
-    if (!boothId) {
-
-      this.dispatch('connect_error', new Error('invalid_booth_id'));
-      return;
     }
 
     var ws;
@@ -190,7 +299,6 @@
     };
 
     ws.onerror = function () {
-
       self.dispatch('connect_error', new Error('websocket_error'));
     };
 
@@ -237,12 +345,6 @@
       return;
     }
 
-    if (window.__LB_RT_DEBUG) {
-      try {
-        console.log('[LB-RT-DBG] recv type=' + type + ' at=' + nowMs());
-      } catch (_d) {}
-    }
-
     this.dispatch(type, data);
   };
 
@@ -258,16 +360,17 @@
 
   LBSocket.prototype.emit = function (name, payload) {
     if (typeof name !== 'string' || !CLIENT_EVENTS[name]) return false;
+
+    // Route via Convex if connected
+    if (this._convex && window.convexApi) {
+      return this._emitConvex(name, payload);
+    }
+
+    // Otherwise route via WebSocket
     if (!this._ws || this._ws.readyState !== 1) return false;
     if (!this._allowSend()) return false;
 
     var frameData = payload === undefined ? {} : payload;
-
-    if (window.__LB_RT_DEBUG && typeof frameData === 'object' && frameData !== null) {
-      frameData = Object.assign({}, frameData);
-      frameData._dbgSendTs = nowMs();
-    }
-
     var frame;
     try {
       frame = JSON.stringify({ type: name, data: frameData });
@@ -282,6 +385,57 @@
     } catch (_e) {
       return false;
     }
+  };
+
+  LBSocket.prototype._emitConvex = function (name, payload) {
+    var boothId = this._currentBoothId();
+    if (!boothId || !this._convex || !window.convexApi) return false;
+
+    var self = this;
+    var api = window.convexApi;
+    var clientId = this.id;
+
+    if (name === 'time-sync-ping') {
+      var t1 = (payload && payload.t1) || Date.now();
+      var now = Date.now();
+      setTimeout(function () {
+        self.dispatch('time-sync-result', { t1: t1, t2: now, t3: now });
+      }, 5);
+      return true;
+    }
+
+    if (name === 'signal') {
+      this._convex.mutation(api.booths.sendSignal, {
+        boothId: boothId,
+        fromClientId: clientId,
+        toClientId: payload && payload.to,
+        type: 'signal',
+        data: (payload && payload.signal) || {}
+      }).catch(function (e) {
+        console.error('[LB-Convex] sendSignal error:', e);
+      });
+      return true;
+    }
+
+    if (name === 'leave-booth') {
+      this._convex.mutation(api.booths.leaveBooth, {
+        boothId: boothId,
+        clientId: clientId
+      }).catch(function () {});
+      return true;
+    }
+
+    // Broadcast relay events (capture-triggered, template-sync, etc.)
+    this._convex.mutation(api.booths.sendSignal, {
+      boothId: boothId,
+      fromClientId: clientId,
+      type: name,
+      data: payload || {}
+    }).catch(function (e) {
+      console.error('[LB-Convex] sendSignal error:', e);
+    });
+
+    return true;
   };
 
   LBSocket.prototype._scheduleReconnect = function () {
@@ -323,6 +477,28 @@
       window.clearTimeout(this._reconnectTimer);
       this._reconnectTimer = null;
     }
+
+    if (this._unsubSignals) {
+      try { this._unsubSignals(); } catch (_e) {}
+      this._unsubSignals = null;
+    }
+    if (this._unsubBooth) {
+      try { this._unsubBooth(); } catch (_e) {}
+      this._unsubBooth = null;
+    }
+
+    if (this._convex && window.convexApi && this.id) {
+      try {
+        var boothId = this._currentBoothId();
+        if (boothId) {
+          this._convex.mutation(window.convexApi.booths.leaveBooth, {
+            boothId: boothId,
+            clientId: this.id
+          }).catch(function () {});
+        }
+      } catch (_e) {}
+    }
+
     if (this._ws) {
       try {
         if (this._ws.readyState === 1) this.emit('leave-booth', {});

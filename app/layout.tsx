@@ -32,6 +32,12 @@ export default function RootLayout({
         <link rel="stylesheet" href="/shared/skeleton.css" />
         {/* Core synchronous runtime dependencies */}
         <script src="/js/config.js"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.CONVEX_URL = ${JSON.stringify(process.env.NEXT_PUBLIC_CONVEX_URL || 'https://knowing-barracuda-495.convex.cloud')};`
+          }}
+        />
+        <script src="/shared/convex-bridge.js"></script>
         <script src="/shared/lb-realtime.js"></script>
         <script src="/shared/loader-v4.min.js"></script>
         <script src="/js/booth-link-entry.js" defer></script>

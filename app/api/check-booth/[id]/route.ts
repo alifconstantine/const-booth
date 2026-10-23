@@ -1,12 +1,28 @@
 import { NextResponse } from 'next/server';
 import { getBoothState } from '../../temp-store';
+import { ConvexHttpClient } from 'convex/browser';
+import { api } from '@/convex/_generated/api';
+
+const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL;
+const convex = convexUrl ? new ConvexHttpClient(convexUrl) : null;
 
 export async function GET(
   request: Request,
   { params }: { params: Promise<{ id: string }> }
 ) {
   const { id } = await params;
-  const booth = getBoothState(id);
+  let booth: any = null;
+
+  if (convex) {
+    try {
+      booth = await convex.query(api.booths.getBooth, { boothId: id });
+    } catch (_e) {}
+  }
+
+  if (!booth) {
+    booth = getBoothState(id);
+  }
+
   const outputMode = booth?.outputMode || 'strip';
   const cardLayout = booth?.cardLayout || (outputMode === 'card' ? 'single' : undefined);
 
