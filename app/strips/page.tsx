@@ -54,28 +54,11 @@ export default function Page() {
             height="30"
           />
         </a>
-        <a
-          href="/profile"
-          className="mobile-login-btn"
-          id="mobile-login-btn"
-          aria-label="Profile"
-          title="Profile"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            width="20"
-            height="20"
-            aria-hidden="true"
-          >
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-            <circle cx="12" cy="7" r="4" />
-          </svg>
-        </a>
+        <div
+          className="mobile-header-spacer"
+          aria-hidden="true"
+          style={{ width: 34, height: 34 }}
+        />
       </header>
 
       {/* Desktop Main Header */}
@@ -113,30 +96,11 @@ export default function Page() {
             height="36"
           />
         </a>
-        <div className="header-actions">
-          <a
-            href="/profile"
-            className="nav-login-btn"
-            id="nav-login-btn"
-            aria-label="Profile"
-            title="Profile"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              width="20"
-              height="20"
-              aria-hidden="true"
-            >
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-              <circle cx="12" cy="7" r="4" />
-            </svg>
-          </a>
-        </div>
+        <div
+          className="header-actions"
+          aria-hidden="true"
+          style={{ width: 36, height: 36 }}
+        />
       </header>
 
       {/* Main Template Selection Application Shell */}

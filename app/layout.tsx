@@ -4,7 +4,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Free Online Photobooth | Long-Distance Couples & Friends',
   description:
-    'The first-ever online photobooth for long-distance couples and friends. Take live photo strips together from anywhere, or try the solo booth. Free, no app.',
+    'Online photobooth for long-distance couples and friends. Take photo strips together from anywhere, or try the solo booth. Free, no app.',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '48x48' },

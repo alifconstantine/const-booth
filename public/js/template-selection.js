@@ -1,5 +1,5 @@
 /**
- * Template Selection Controller (Image 2 Jepreto-style)
+ * Template Selection Controller (ConstBooth Native Style)
  * Bulletproof vanilla JS implementation with zero React hydration dependencies.
  */
 (function () {
@@ -32,27 +32,25 @@
     }
   }
 
-  function formatNumber(num) {
-    if (!num) return '0';
-    return Number(num).toLocaleString('id-ID');
-  }
-
   function filterAndSortTemplates() {
     return allTemplates.filter(function (t) {
-      if (state.category === 'jepreto' && !t.isJepreto) return false;
-      if (state.category === 'classic' && !t.isOriginal) return false;
+      // Category filter (ratio-based)
       if (state.category === '1:3' && t.ratio !== '1:3') return false;
       if (state.category === '2:3' && t.ratio !== '2:3') return false;
+      if (state.category === 'others' && (t.ratio === '1:3' || t.ratio === '2:3')) return false;
 
+      // Dropdown size filter
       if (state.size !== 'all') {
         if (state.size === 'others' && (t.ratio === '1:3' || t.ratio === '2:3')) return false;
         if (state.size !== 'others' && t.ratio !== state.size) return false;
       }
 
+      // Photos slots filter
       if (state.slots !== 'all' && t.slotsCount !== parseInt(state.slots, 10)) {
         return false;
       }
 
+      // Tag filter
       if (state.tag) {
         var tagLower = state.tag.toLowerCase();
         var matchTag = (t.name && t.name.toLowerCase().indexOf(tagLower) !== -1) ||
@@ -60,6 +58,7 @@
         if (!matchTag) return false;
       }
 
+      // Keyword search
       if (state.search.trim()) {
         var q = state.search.toLowerCase().trim();
         var matchSearch = (t.name && t.name.toLowerCase().indexOf(q) !== -1) ||
@@ -90,6 +89,12 @@
     var paged = filtered.slice(start, start + state.itemsPerPage);
     var boothId = getBoothId();
 
+    var count1x3 = allTemplates.filter(function (t) { return t.ratio === '1:3'; }).length;
+    var count2x3 = allTemplates.filter(function (t) { return t.ratio === '2:3'; }).length;
+    var countOthers = allTemplates.filter(function (t) { return t.ratio !== '1:3' && t.ratio !== '2:3'; }).length;
+
+    var isCardActive = (state.category === '2:3' || state.size === '2:3');
+
     var html = '';
 
     // Flow trail & Header
@@ -104,17 +109,17 @@
     html += '  <h1 class="ts-hero-title">Pilih Template <span class="accent">Photobooth</span></h1>';
     html += '  <p class="ts-hero-sub">Jelajahi template photostrip karya para creator — pilih, foto, dan bagikan hasilnya.</p>';
 
-    // Mode Switcher Tabs
+    // Mode Switcher Tabs (Functional instant filter)
     html += '  <div class="ts-mode-tabs-wrap">';
-    html += '    <div class="ts-mode-tabs" role="tablist">';
-    html += '      <button class="ts-mode-tab active" role="tab" aria-selected="true">';
+    html += '    <div class="ts-mode-tabs" role="tablist" aria-label="Format Photobooth">';
+    html += '      <button type="button" class="ts-mode-tab' + (!isCardActive ? ' active' : '') + '" data-mode="strip" role="tab" aria-selected="' + (!isCardActive ? 'true' : 'false') + '">';
     html += '        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/><line x1="9" y1="15" x2="15" y2="15"/></svg>';
     html += '        Photo Strips';
     html += '      </button>';
-    html += '      <a href="' + (boothId ? '/frame?booth=' + encodeURIComponent(boothId) : '/frame') + '" class="ts-mode-tab" role="tab" aria-selected="false">';
+    html += '      <button type="button" class="ts-mode-tab' + (isCardActive ? ' active' : '') + '" data-mode="card" role="tab" aria-selected="' + (isCardActive ? 'true' : 'false') + '">';
     html += '        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><rect x="6" y="6" width="12" height="9" rx="1.5"/><line x1="9" y1="19" x2="9" y2="19"/><line x1="12" y1="19" x2="12" y2="19"/><line x1="15" y1="19" x2="15" y2="19"/></svg>';
     html += '        Instant Frames';
-    html += '      </a>';
+    html += '      </button>';
     html += '    </div>';
     html += '  </div>';
     html += '</header>';
@@ -122,14 +127,16 @@
     // Filter Toolbar
     html += '<section class="ts-toolbar" aria-label="Template filters">';
     html += '  <span class="ts-toolbar-filter-label">Filter by:</span>';
-    
+
     // Size dropdown
     html += '  <div class="ts-dropdown">';
     html += '    <select id="ts-select-size" aria-label="Filter by Size">';
     html += '      <option value="all"' + (state.size === 'all' ? ' selected' : '') + '>All Sizes</option>';
     html += '      <option value="1:3"' + (state.size === '1:3' ? ' selected' : '') + '>1:3 (Strip Vertikal)</option>';
     html += '      <option value="2:3"' + (state.size === '2:3' ? ' selected' : '') + '>2:3 (Photocard)</option>';
-    html += '      <option value="others"' + (state.size === 'others' ? ' selected' : '') + '>Others (A4/A3)</option>';
+    if (countOthers > 0) {
+      html += '      <option value="others"' + (state.size === 'others' ? ' selected' : '') + '>Others (A4/A3)</option>';
+    }
     html += '    </select>';
     html += '  </div>';
 
@@ -160,7 +167,7 @@
     html += '      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
     html += '      <input type="text" id="ts-search-input" class="ts-search-input" placeholder="Search Templates..." value="' + state.search.replace(/"/g, '&quot;') + '">';
     if (state.search) {
-      html += '    <button type="button" id="ts-search-clear" class="ts-search-clear">&times;</button>';
+      html += '    <button type="button" id="ts-search-clear" class="ts-search-clear" aria-label="Clear search">&times;</button>';
     }
     html += '    </div>';
     html += '    <button type="button" id="ts-search-btn" class="ts-search-btn">Search</button>';
@@ -182,13 +189,14 @@
     }
     html += '</section>';
 
-    // Category Tabs
-    html += '<nav class="ts-category-tabs" aria-label="Category tabs">';
+    // Category Tabs (All + Ratio categories only, no fake Top 100)
+    html += '<nav class="ts-category-tabs" aria-label="Ratio categories">';
     html += '  <button type="button" class="ts-cat-btn' + (state.category === 'all' ? ' active' : '') + '" data-cat="all">Semua (' + allTemplates.length + ')</button>';
-    html += '  <button type="button" class="ts-cat-btn' + (state.category === 'jepreto' ? ' active' : '') + '" data-cat="jepreto">Top 100 Jepreto</button>';
-    html += '  <button type="button" class="ts-cat-btn' + (state.category === '1:3' ? ' active' : '') + '" data-cat="1:3">Strip 1:3 (' + allTemplates.filter(function(t){return t.ratio==='1:3';}).length + ')</button>';
-    html += '  <button type="button" class="ts-cat-btn' + (state.category === '2:3' ? ' active' : '') + '" data-cat="2:3">Card 2:3 (' + allTemplates.filter(function(t){return t.ratio==='2:3';}).length + ')</button>';
-    html += '  <button type="button" class="ts-cat-btn' + (state.category === 'classic' ? ' active' : '') + '" data-cat="classic">ConstBooth Classic (' + allTemplates.filter(function(t){return t.isOriginal;}).length + ')</button>';
+    html += '  <button type="button" class="ts-cat-btn' + (state.category === '1:3' ? ' active' : '') + '" data-cat="1:3">Strip 1:3 (' + count1x3 + ')</button>';
+    html += '  <button type="button" class="ts-cat-btn' + (state.category === '2:3' ? ' active' : '') + '" data-cat="2:3">Card 2:3 (' + count2x3 + ')</button>';
+    if (countOthers > 0) {
+      html += '  <button type="button" class="ts-cat-btn' + (state.category === 'others' ? ' active' : '') + '" data-cat="others">Format Lain (' + countOthers + ')</button>';
+    }
     html += '</nav>';
 
     // Grid of cards
@@ -196,6 +204,7 @@
       html += '<main class="ts-grid" id="main-content">';
       paged.forEach(function (tmpl) {
         var imgUrl = tmpl.thumbnailUrl || tmpl.frameUrl;
+        var ratioLabel = tmpl.ratio === '2:3' ? 'Card 2:3' : (tmpl.ratio === '1:3' ? 'Strip 1:3' : (tmpl.ratio || '1:3'));
         html += '<article class="ts-card" data-tmpl-id="' + tmpl.id + '" tabindex="0" role="button" aria-label="Select template ' + tmpl.name + '">';
         html += '  <div class="ts-card-badges">';
         html += '    <span class="ts-badge-free">✨ Free</span>';
@@ -214,14 +223,11 @@
 
         html += '  <footer class="ts-card-footer">';
         html += '    <div class="ts-card-meta-row">';
-        html += '      <span class="ts-badge-used">';
-        html += '        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>';
-        html += '        ' + formatNumber(tmpl.usedTimes) + ' uses';
-        html += '      </span>';
-        html += '      <span style="font-size:11px;color:#9ca3af;font-weight:600">' + (tmpl.ratio || '1:3') + '</span>';
+        html += '      <span class="ts-badge-ratio">' + ratioLabel + '</span>';
+        html += '      <span class="ts-badge-slots-subtle">' + tmpl.slotsCount + ' Photos</span>';
         html += '    </div>';
         html += '    <h3 class="ts-card-title" title="' + tmpl.name + '">' + tmpl.name + '</h3>';
-        html += '    <p class="ts-card-author">' + tmpl.slotsCount + ' photos &bull; by ' + tmpl.creator + '</p>';
+        html += '    <p class="ts-card-author">by ' + tmpl.creator + '</p>';
         html += '  </footer>';
         html += '</article>';
       });
@@ -260,7 +266,7 @@
     var card = document.querySelector('.ts-card[data-tmpl-id="' + id + '"]');
     if (card) {
       card.style.transform = 'scale(0.97)';
-      card.style.borderColor = '#7c3aed';
+      card.style.borderColor = '#F12850';
       var btn = card.querySelector('.ts-btn-start');
       if (btn) {
         btn.innerHTML = '<span style="display:inline-block;animation:spin 0.8s linear infinite;margin-right:6px">⏳</span> Masuk Booth...';
@@ -278,8 +284,15 @@
     console.log('Selected template:', tmpl.name, tmpl);
 
     try {
-      localStorage.setItem('outputMode', 'strip');
-      localStorage.removeItem('cardLayout');
+      var isCard = (tmpl.ratio === '2:3');
+      var outMode = isCard ? 'card' : 'strip';
+      localStorage.setItem('outputMode', outMode);
+      if (isCard) {
+        localStorage.setItem('cardLayout', 'classic');
+      } else {
+        localStorage.removeItem('cardLayout');
+      }
+
       sessionStorage.setItem('lb_strip_locked', '1');
       sessionStorage.removeItem('lb_pending_strip');
       sessionStorage.removeItem('lb_ic_photos');
@@ -312,6 +325,23 @@
 
   // Delegated event listener for clicks across the entire page
   document.addEventListener('click', function (e) {
+    // 0. Mode tabs click (Photo Strips vs Instant Frames)
+    var modeBtn = e.target.closest('.ts-mode-tab');
+    if (modeBtn && modeBtn.getAttribute('data-mode')) {
+      e.preventDefault();
+      var mode = modeBtn.getAttribute('data-mode');
+      if (mode === 'card') {
+        state.category = '2:3';
+        state.size = '2:3';
+      } else {
+        state.category = '1:3';
+        state.size = '1:3';
+      }
+      state.page = 1;
+      render();
+      return;
+    }
+
     // 1. Card click
     var card = e.target.closest('.ts-card');
     if (card) {
@@ -345,7 +375,13 @@
     var catBtn = e.target.closest('.ts-cat-btn');
     if (catBtn && catBtn.getAttribute('data-cat')) {
       e.preventDefault();
-      state.category = catBtn.getAttribute('data-cat');
+      var cat = catBtn.getAttribute('data-cat');
+      state.category = cat;
+      if (cat === '1:3' || cat === '2:3' || cat === 'others') {
+        state.size = cat;
+      } else if (cat === 'all') {
+        state.size = 'all';
+      }
       state.page = 1;
       render();
       return;
@@ -402,6 +438,11 @@
   document.addEventListener('change', function (e) {
     if (e.target.id === 'ts-select-size') {
       state.size = e.target.value;
+      if (state.size === '1:3' || state.size === '2:3' || state.size === 'others') {
+        state.category = state.size;
+      } else if (state.size === 'all') {
+        state.category = 'all';
+      }
       state.page = 1;
       render();
     } else if (e.target.id === 'ts-select-slots') {
