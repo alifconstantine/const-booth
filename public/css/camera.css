@@ -179,7 +179,7 @@
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
-  opacity: 1 !important;
+  opacity: 0 !important;
   pointer-events: none !important;
   z-index: 0 !important;
   transform: scaleX(-1);
