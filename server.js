@@ -41,18 +41,22 @@ app.prepare().then(() => {
   // Map of boothId -> Map<socketId, { ws, isInitiator, clientId }>
   const rooms = new Map();
 
+  const upgradeHandler = typeof app.getUpgradeHandler === 'function' ? app.getUpgradeHandler() : null;
+
   server.on('upgrade', (req, socket, head) => {
     const { pathname, query } = parse(req.url, true);
     if (pathname === '/api/ws') {
       wss.handleUpgrade(req, socket, head, (ws) => {
         wss.emit('connection', ws, req, query);
       });
+    } else if (upgradeHandler) {
+      upgradeHandler(req, socket, head);
     } else {
       socket.destroy();
     }
   });
 
-  wss.on('connection', (ws, req, query) => {
+  wss.on('connection', (ws, req, query) => { console.log('[WS SERVER CONNECT]', query);
     let currentBoothId = (query && query.booth ? String(query.booth).toLowerCase().trim() : null);
     const clientId = (query && query.clientId ? String(query.clientId) : '') || Math.random().toString(36).substring(2, 10);
     const socketId = 's_' + Math.random().toString(36).substring(2, 10);
@@ -75,6 +79,19 @@ app.prepare().then(() => {
       }
 
       const room = rooms.get(currentBoothId);
+
+      // If already in this room with active socket, do not re-add or close
+      if (room.has(socketId)) {
+        return;
+      }
+
+      // Clean up any stale socket with the SAME clientId from previous connection
+      for (const [existingSocketId, peer] of room.entries()) {
+        if (existingSocketId !== socketId && peer.clientId === clientId) {
+          try { peer.ws.close(); } catch (_e) {}
+          room.delete(existingSocketId);
+        }
+      }
 
       // Check if room is full (max 2 participants for photobooth berdua)
       if (room.size >= 2) {
@@ -172,13 +189,28 @@ app.prepare().then(() => {
       }
 
       if (type === 'capture-triggered') {
-        // Broadcast start-capture to everyone with a slight forward offset for synchronization
-        const captureStartTime = Date.now() + 150;
+        const photoCount = (data && Number.isFinite(data.photoCount) && data.photoCount >= 1 && data.photoCount <= 8)
+          ? Math.floor(data.photoCount)
+          : (room.photoCount || 3);
+
+        const startAt = Date.now() + 500;
+        const intervalMs = 4000; // 3s countdown + 1s capture/flash
+        const shutterTimes = [];
+        for (let i = 0; i < photoCount; i++) {
+          shutterTimes.push(startAt + 3500 + (i * intervalMs));
+        }
+        const revealAt = shutterTimes[shutterTimes.length - 1] + 2500;
+
         for (const peer of room.values()) {
           if (peer.ws.readyState === 1) {
             peer.ws.send(JSON.stringify({
               type: 'start-capture',
-              data: { startTime: captureStartTime }
+              data: {
+                startAt,
+                shutterTimes,
+                revealAt,
+                photoCount
+              }
             }));
           }
         }
@@ -188,9 +220,14 @@ app.prepare().then(() => {
       // Broadcast relay events
       const broadcastEvents = {
         'retake': 'on-retake',
+        'retake-triggered': 'on-retake',
         'style-switch': 'on-style-switch',
+        'style-switched': 'on-style-switch',
         'filter-switch': 'on-filter-switch',
+        'filter-switched': 'on-filter-switch',
         'zoom-switch': 'on-zoom-switch',
+        'zoom-switched': 'on-zoom-switch',
+        'template-sync': 'on-template-sync',
         'booth-output': 'booth-output',
         'ic-customizing': 'ic-customizing',
         'retake-peer-stay': 'retake-peer-stay',
@@ -199,6 +236,12 @@ app.prepare().then(() => {
 
       if (broadcastEvents[type]) {
         const outType = broadcastEvents[type];
+        if (type === 'template-sync' && data && data.template) {
+          room.template = data.template;
+          if (data.template.slotsCount) {
+            room.photoCount = data.template.slotsCount;
+          }
+        }
         for (const [peerId, peer] of room.entries()) {
           if (peerId !== socketId && peer.ws.readyState === 1) {
             peer.ws.send(JSON.stringify({
@@ -236,8 +279,8 @@ app.prepare().then(() => {
       }
     };
 
-    ws.on('close', leaveCurrentRoom);
-    ws.on('error', leaveCurrentRoom);
+    ws.on('close', (code, reason) => { console.log('[WS SERVER CLOSE]', socketId, code, reason ? reason.toString() : ''); leaveCurrentRoom(); });
+    ws.on('error', (err) => { console.error('[WS SERVER ERROR]', socketId, err); leaveCurrentRoom(); });
   });
 
   server.listen(port, hostname, () => {

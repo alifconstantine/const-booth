@@ -311,6 +311,22 @@
     }
 
     var boothId = getBoothId();
+    if (boothId) {
+      try {
+        var styleKey = (tmpl.isOriginal && tmpl.originalKey) ? tmpl.originalKey : (tmpl.shortId || tmpl.id);
+        fetch('/api/booth-output', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            boothId: boothId,
+            outputMode: 'strip',
+            stripStyle: styleKey,
+            template: tmpl,
+            photoCount: tmpl.slotsCount || 3
+          })
+        }).catch(function () {});
+      } catch (_e) {}
+    }
     var target = boothId
       ? '/camera?booth=' + encodeURIComponent(boothId)
       : '/camera';

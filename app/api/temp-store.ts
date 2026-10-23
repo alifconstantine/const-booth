@@ -6,6 +6,10 @@ interface TempImageItem {
 
 interface BoothStateItem {
   outputMode: string;
+  stripStyle?: string;
+  template?: any;
+  cardLayout?: string;
+  photoCount?: number;
   updatedAt: number;
 }
 
@@ -57,9 +61,26 @@ function cleanupExpiredImages() {
   }
 }
 
-export function saveBoothState(boothId: string, state: { outputMode: string }) {
-  boothStateStore.set(boothId.toUpperCase().trim(), {
-    outputMode: state.outputMode,
+export function saveBoothState(
+  boothId: string,
+  state: {
+    outputMode?: string;
+    stripStyle?: string;
+    template?: any;
+    cardLayout?: string;
+    photoCount?: number;
+  }
+) {
+  const key = boothId.toUpperCase().trim();
+  const existing = boothStateStore.get(key) || {
+    outputMode: 'strip',
+    updatedAt: Date.now()
+  };
+
+  boothStateStore.set(key, {
+    ...existing,
+    ...state,
+    outputMode: state.outputMode || existing.outputMode || 'strip',
     updatedAt: Date.now()
   });
 }

@@ -10,7 +10,8 @@ export async function POST(req: Request) {
     }
   } catch (_e) {}
 
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  // Crockford Base32 alphabet: excludes 0, 1, I, O to prevent ambiguity & regex rejections
+  const characters = '23456789ABCDEFGHJKLMNPQRSTUVWXYZ';
   let boothId = '';
   for (let i = 0; i < 6; i++) {
     boothId += characters.charAt(Math.floor(Math.random() * characters.length));

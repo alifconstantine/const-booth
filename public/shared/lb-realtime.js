@@ -1,7 +1,7 @@
 (function (window) {
   'use strict';
 
-  var BOOTH_ID_RE = /^(?:[23456789ABCDEFGHJKLMNPQRSTUVWXYZ]{6}|[a-f0-9]{16}|[a-f0-9]{8})$/i;
+  var BOOTH_ID_RE = /^[a-zA-Z0-9_-]{4,32}$/i;
 
   var RECONNECT_BASE_MS = 500;
   var RECONNECT_MAX_MS = 15000;
@@ -28,6 +28,8 @@
     'on-style-switch': 1,
     'on-filter-switch': 1,
     'on-zoom-switch': 1,
+    'on-template-sync': 1,
+    'template-sync': 1,
     'ic-customizing': 1,
     'retake-peer-stay': 1,
     'retake-peer-ready': 1,
@@ -50,6 +52,7 @@
     'style-switched': 1,
     'filter-switched': 1,
     'zoom-switched': 1,
+    'template-sync': 1,
     'time-sync-ping': 1
   };
 
