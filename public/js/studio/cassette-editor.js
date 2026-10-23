@@ -1441,11 +1441,12 @@
   }
 
   function hasUnsavedWork() {
-    return audioState === AUDIO.RECORDING || audioState === AUDIO.PAUSED_RECORDING || (rec.blob && !shared.id);
+    return (audioState === AUDIO.RECORDING || audioState === AUDIO.PAUSED_RECORDING || (rec.blob && !shared.id)) && !shared.uploading;
   }
 
   function teardown() {
     clearLimitTimer();
+    window.__lbCassetteEditorBooted = false;
     if (rec.recorder) {
       rec.recorder.onstop = null;
       try { if (rec.recorder.state !== 'inactive') rec.recorder.stop(); } catch (_e) {}
@@ -1544,14 +1545,21 @@
     });
     els.startOver.addEventListener('click', startOver);
 
-    window.addEventListener('beforeunload', function (e) {
+    function onBeforeUnload(e) {
       if (!hasUnsavedWork()) return;
       e.preventDefault();
       e.returnValue = '';
-    });
+    }
+    window.addEventListener('beforeunload', onBeforeUnload);
     window.addEventListener('pagehide', teardown);
     window.addEventListener('pageshow', function (e) {
-      if (e.persisted) window.location.reload();
+      if (e.persisted) {
+        // Sync UI state without reloading the page or destroying recorded audio/inputs
+        try {
+          renderArt();
+          renderRecordStatus();
+        } catch (_e) {}
+      }
     });
 
     window.addEventListener('load', function () {
@@ -1574,8 +1582,9 @@
 
   var isBooted = false;
   function boot() {
-    if (isBooted) return;
+    if (isBooted || window.__lbCassetteEditorBooted) return;
     isBooted = true;
+    window.__lbCassetteEditorBooted = true;
     els = {
       app: byId('cs-app'),
       headerBack: ['nav-back-btn', 'mobile-back-btn'].map(byId).filter(Boolean),

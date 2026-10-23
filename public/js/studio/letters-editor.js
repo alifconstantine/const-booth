@@ -1719,6 +1719,7 @@
 
     window.addEventListener('beforeunload', onBeforeUnload);
     window.addEventListener('pagehide', function () {
+      window.__lbLettersEditorBooted = false;
       M.saveDraft(letter);
 
       clearTimers();
@@ -2134,8 +2135,9 @@
   var isBooted = false;
   function boot() {
     collectElements();
-    if (!els.app || isBooted) return;
+    if (!els.app || isBooted || window.__lbLettersEditorBooted) return;
     isBooted = true;
+    window.__lbLettersEditorBooted = true;
 
     M.loadDraft().then(function (draft) {
       letter = draft || M.createLetter();

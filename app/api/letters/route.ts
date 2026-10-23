@@ -2,13 +2,37 @@ import { NextRequest, NextResponse } from 'next/server';
 import crypto from 'crypto';
 import fs from 'fs';
 import path from 'path';
+import os from 'os';
 
-const LETTERS_DIR = path.join(process.cwd(), 'data', 'letters-data');
-const memoryCache = new Map<string, any>();
+export interface LetterRecord {
+  id: string;
+  paper: string;
+  pages: string[];
+  createdAt: number;
+}
 
-function ensureDir() {
-  if (!fs.existsSync(LETTERS_DIR)) {
-    fs.mkdirSync(LETTERS_DIR, { recursive: true });
+const DATA_LETTERS_DIR = path.join(process.cwd(), 'data', 'letters-data');
+const LEGACY_LETTERS_DIR = path.join(process.cwd(), '.next', 'letters-data');
+const TMP_LETTERS_DIR = path.join(os.tmpdir(), 'constbooth_letters');
+
+const globalForLetters = globalThis as unknown as {
+  _letterStore?: Map<string, LetterRecord>;
+};
+
+export const letterStore = globalForLetters._letterStore || new Map<string, LetterRecord>();
+
+if (process.env.NODE_ENV !== 'production') {
+  globalForLetters._letterStore = letterStore;
+}
+
+function ensureDirSafe(dir: string): boolean {
+  try {
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    return true;
+  } catch (_e) {
+    return false;
   }
 }
 
@@ -22,19 +46,29 @@ export async function POST(req: NextRequest) {
     }
 
     const id = crypto.randomBytes(6).toString('base64url');
-    ensureDir();
-
-    const letterData = {
+    const record: LetterRecord = {
       id,
       paper: paper || 'cream',
       pages,
       createdAt: Date.now()
     };
 
-    memoryCache.set(id, letterData);
+    // 1. Save in memory
+    letterStore.set(id, record);
 
-    const filePath = path.join(LETTERS_DIR, `${id}.json`);
-    fs.writeFileSync(filePath, JSON.stringify(letterData), 'utf8');
+    // 2. Save in data/letters-data
+    if (ensureDirSafe(DATA_LETTERS_DIR)) {
+      try {
+        fs.writeFileSync(path.join(DATA_LETTERS_DIR, `${id}.json`), JSON.stringify(record, null, 2), 'utf8');
+      } catch (_e) {}
+    }
+
+    // 3. Save in /tmp (always writable in serverless / Vercel)
+    if (ensureDirSafe(TMP_LETTERS_DIR)) {
+      try {
+        fs.writeFileSync(path.join(TMP_LETTERS_DIR, `${id}.json`), JSON.stringify(record, null, 2), 'utf8');
+      } catch (_e) {}
+    }
 
     return NextResponse.json({ id, success: true });
   } catch (err: any) {
@@ -51,31 +85,41 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: 'Missing id parameter' }, { status: 400 });
   }
 
-  if (memoryCache.has(id)) {
-    return NextResponse.json(memoryCache.get(id));
+  // 1. Check memory
+  const fromMemory = letterStore.get(id);
+  if (fromMemory) {
+    return NextResponse.json(fromMemory);
   }
 
-  ensureDir();
-  const filePath = path.join(LETTERS_DIR, `${id}.json`);
-  if (!fs.existsSync(filePath)) {
-    // Check old directory if exists
-    const oldPath = path.join(process.cwd(), '.next', 'letters-data', `${id}.json`);
-    if (fs.existsSync(oldPath)) {
-      try {
-        const oldData = JSON.parse(fs.readFileSync(oldPath, 'utf8'));
-        memoryCache.set(id, oldData);
-        fs.writeFileSync(filePath, JSON.stringify(oldData), 'utf8');
-        return NextResponse.json(oldData);
-      } catch (_e) {}
-    }
-    return NextResponse.json({ error: 'Letter not found' }, { status: 404 });
-  }
-
+  // 2. Check data/letters-data
   try {
-    const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    memoryCache.set(id, data);
-    return NextResponse.json(data);
-  } catch (_e) {
-    return NextResponse.json({ error: 'Failed to read letter' }, { status: 500 });
-  }
+    const dataPath = path.join(DATA_LETTERS_DIR, `${id}.json`);
+    if (fs.existsSync(dataPath)) {
+      const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+      letterStore.set(id, data);
+      return NextResponse.json(data);
+    }
+  } catch (_e) {}
+
+  // 3. Check /tmp
+  try {
+    const tmpPath = path.join(TMP_LETTERS_DIR, `${id}.json`);
+    if (fs.existsSync(tmpPath)) {
+      const data = JSON.parse(fs.readFileSync(tmpPath, 'utf8'));
+      letterStore.set(id, data);
+      return NextResponse.json(data);
+    }
+  } catch (_e) {}
+
+  // 4. Check legacy dir
+  try {
+    const legacyPath = path.join(LEGACY_LETTERS_DIR, `${id}.json`);
+    if (fs.existsSync(legacyPath)) {
+      const data = JSON.parse(fs.readFileSync(legacyPath, 'utf8'));
+      letterStore.set(id, data);
+      return NextResponse.json(data);
+    }
+  } catch (_e) {}
+
+  return NextResponse.json({ error: 'Letter not found' }, { status: 404 });
 }

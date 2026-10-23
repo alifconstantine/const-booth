@@ -1,19 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import crypto from 'crypto';
-import fs from 'fs';
-import path from 'path';
-
-const CASSETTES_DIR = path.join(process.cwd(), 'public', 'uploads', 'cassettes');
-
-function ensureDir() {
-  if (!fs.existsSync(CASSETTES_DIR)) {
-    fs.mkdirSync(CASSETTES_DIR, { recursive: true });
-  }
-}
+import { saveCassette, CassetteRecord } from '../cassette-store';
 
 export async function POST(req: NextRequest) {
   try {
-    ensureDir();
     const formData = await req.formData();
     const metaRaw = formData.get('meta') as string | null;
     const audioFile = formData.get('audio') as File | null;
@@ -31,41 +21,34 @@ export async function POST(req: NextRequest) {
     }
 
     // Generate 32-hex character ID (required by cassette-editor regex: /^[a-f0-9]{32}$/)
-    const id = crypto.randomBytes(16).toString('hex');
+    const id = crypto.randomBytes(16).toString('hex').toLowerCase();
 
-    // Save audio
-    const audioExt = audioFile.name.split('.').pop() || 'webm';
-    const audioFilename = `${id}.${audioExt}`;
-    const audioPath = path.join(CASSETTES_DIR, audioFilename);
+    // Prepare audio buffer and extension
+    const audioExt = audioFile.name.split('.').pop()?.toLowerCase() || 'webm';
     const audioBuffer = Buffer.from(await audioFile.arrayBuffer());
-    fs.writeFileSync(audioPath, audioBuffer);
 
-    // Save photo if present
-    let photoUrl: string | null = null;
+    // Prepare photo buffer and extension if present
+    let photoBuffer: Buffer | null = null;
+    let photoExt: string | null = null;
     if (photoFile && photoFile.size > 0) {
-      const photoExt = photoFile.name.split('.').pop() || 'jpg';
-      const photoFilename = `${id}_photo.${photoExt}`;
-      const photoPath = path.join(CASSETTES_DIR, photoFilename);
-      const photoBuffer = Buffer.from(await photoFile.arrayBuffer());
-      fs.writeFileSync(photoPath, photoBuffer);
-      photoUrl = `/uploads/cassettes/${photoFilename}`;
+      photoExt = photoFile.name.split('.').pop()?.toLowerCase() || 'jpg';
+      photoBuffer = Buffer.from(await photoFile.arrayBuffer());
     }
 
-    const cassetteRecord = {
+    const cassetteRecord: CassetteRecord = {
       id,
       design: meta.design || 'blue-side-a',
       message: meta.message || '',
       date: meta.date || '',
       duration: meta.duration || 0,
       audio: {
-        url: `/uploads/cassettes/${audioFilename}`
+        url: `/api/cassettes/${id}/audio`
       },
-      photo: photoUrl ? { url: photoUrl } : null,
+      photo: photoBuffer ? { url: `/api/cassettes/${id}/photo` } : null,
       createdAt: Date.now()
     };
 
-    const recordPath = path.join(CASSETTES_DIR, `${id}.json`);
-    fs.writeFileSync(recordPath, JSON.stringify(cassetteRecord, null, 2), 'utf8');
+    await saveCassette(id, cassetteRecord, audioBuffer, audioExt, photoBuffer, photoExt);
 
     return NextResponse.json({ id, success: true });
   } catch (err: any) {

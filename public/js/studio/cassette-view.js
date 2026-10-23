@@ -4,8 +4,8 @@
   var ART = window.LBCassetteArt;
   var DECK = window.LBCassetteDeck;
 
-  var ID_PATTERN = /^\/studio\/cassette\/([^/]+)$/;
-  var VALID_ID = /^[a-f0-9]{32}$/;
+  var ID_PATTERN = /^\/studio\/cassette\/([a-f0-9]{32})(?:\/|\?|#|$)/i;
+  var VALID_ID = /^[a-f0-9]{32}$/i;
   var VOLUME_KEY = 'lb_cassette_volume';
 
   var els = {};
@@ -111,7 +111,7 @@
       showError('invalid');
       return;
     }
-    cassetteId = match[1];
+    cassetteId = match[1].toLowerCase();
 
     if (typeof navigator.onLine === 'boolean' && navigator.onLine === false) {
       showError('offline');

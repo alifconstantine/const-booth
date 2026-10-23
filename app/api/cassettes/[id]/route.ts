@@ -1,8 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
-
-const CASSETTES_DIR = path.join(process.cwd(), 'public', 'uploads', 'cassettes');
+import { getCassette } from '../../cassette-store';
 
 export async function GET(
   req: NextRequest,
@@ -10,17 +7,16 @@ export async function GET(
 ) {
   try {
     const { id } = await params;
-    if (!id || !/^[a-f0-9]{32}$/.test(id)) {
+    if (!id || !/^[a-f0-9]{32}$/i.test(id)) {
       return NextResponse.json({ error: 'Invalid id' }, { status: 400 });
     }
 
-    const recordPath = path.join(CASSETTES_DIR, `${id}.json`);
-    if (!fs.existsSync(recordPath)) {
+    const record = await getCassette(id);
+    if (!record) {
       return NextResponse.json({ error: 'Cassette not found' }, { status: 404 });
     }
 
-    const data = JSON.parse(fs.readFileSync(recordPath, 'utf8'));
-    return NextResponse.json(data);
+    return NextResponse.json(record);
   } catch (err: any) {
     console.error('Error fetching cassette:', err);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
