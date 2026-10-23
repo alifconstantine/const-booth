@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: pageData.description,
 };
 
-const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL;
+const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL || 'https://knowing-barracuda-495.convex.cloud';
 const convex = convexUrl ? new ConvexHttpClient(convexUrl) : null;
 
 export default async function Page({

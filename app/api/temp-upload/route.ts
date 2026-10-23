@@ -4,7 +4,7 @@ import { saveTempImage } from '../temp-store';
 import { ConvexHttpClient } from 'convex/browser';
 import { api } from '@/convex/_generated/api';
 
-const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL;
+const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL || 'https://knowing-barracuda-495.convex.cloud';
 const convex = convexUrl ? new ConvexHttpClient(convexUrl) : null;
 
 export async function POST(req: Request) {
