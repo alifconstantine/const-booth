@@ -258,7 +258,7 @@
 
     var body = document.createElement('textarea');
     body.className = 'lt-body';
-    body.setAttribute('spellcheck', 'true');
+    body.setAttribute('spellcheck', 'false');
     body.setAttribute('autocapitalize', 'sentences');
     body.placeholder = index === 0 ? 'Start writing…' : '';
 
